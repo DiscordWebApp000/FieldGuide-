@@ -250,28 +250,80 @@
     {
       "id": "s5",
       "category": "stansiya",
-      "question": "Stansiyada kesici açma-kapama sayısı hangi durumda sıfırlanmalıdır?",
+      "question": "Generator həddindən artıq qızdıqda hansı tədbir görülməlidir?",
       "options": {
-        "a": "Her bakımda",
-        "b": "Arıza sonrası",
-        "c": "Kontaklar değişince",
-        "d": "Yılda bir"
+        "a": "Yükü azaltmaq",
+        "b": "Soyutma sistemini gücləndirmək",
+        "c": "Generatoru dayandırmaq",
+        "d": "Yağ səviyyəsini yoxlamaq"
       },
-      "correctAnswer": "c",
-      "explanation": "Kesici açma-kapama sayacı, kontaklar değiştirildiğinde sıfırlanmalıdır çünkü yeni kontakların ömür takibi başlar."
+      "correctAnswer": "a",
+      "explanation": "Generator həddindən artıq qızdıqda ilk tədbir olaraq yükü azaltmaq lazımdır. Bu, qızmanın qarşısını alır və avadanlığı qoruyur."
     },
     {
       "id": "s6",
       "category": "stansiya",
-      "question": "SCADA sisteminde haberleşme kaybı yaşandığında öncelikli kontrol noktası neresidir?",
+      "question": "Turbinin vibrasiyası artdıqda ilk yoxlanılmalı olan nədir?",
       "options": {
-        "a": "Fiber optik kablolar",
-        "b": "RTU cihazı",
-        "c": "Modem bağlantıları",
-        "d": "Sunucu durumu"
+        "a": "Yastıqların vəziyyəti",
+        "b": "Rotor balansı",
+        "c": "Yağlama sistemi",
+        "d": "Buxar təzyiqi"
+      },
+      "correctAnswer": "c",
+      "explanation": "Turbin vibrasiyası artdıqda ilk olaraq yağlama sistemi yoxlanılmalıdır, çünki yağlama problemi ani vibrasiya artımına səbəb ola bilər."
+    },
+    {
+      "id": "s7",
+      "category": "stansiya",
+      "question": "Yanacaq sistemində təzyiq düşməsi baş verdikdə nə edilməlidir?",
+      "options": {
+        "a": "Yanacaq nasosunu yoxlamaq",
+        "b": "Filtri təmizləmək",
+        "c": "Klapanları yoxlamaq",
+        "d": "Sistemə hava vurmaq"
       },
       "correctAnswer": "b",
-      "explanation": "SCADA haberleşme kaybında ilk kontrol noktası RTU cihazıdır, çünkü saha verilerinin toplanma ve iletilme noktasıdır."
+      "explanation": "Yanacaq sistemində təzyiq düşməsinin ən çox rast gəlinən səbəbi filtr tutulmasıdır, ona görə ilk addım filtri təmizləməkdir."
+    },
+    {
+      "id": "s8",
+      "category": "stansiya",
+      "question": "Generatorun fırlanma sürəti qəfildən dəyişərsə səbəb nə ola bilər?",
+      "options": {
+        "a": "Yük dəyişməsi",
+        "b": "Turbin problemi",
+        "c": "Tənzimləyici nasazlığı",
+        "d": "Şəbəkə problemi"
+      },
+      "correctAnswer": "c",
+      "explanation": "Generatorun fırlanma sürətinin qəfil dəyişməsi adətən sürət tənzimləyicisinin nasazlığından qaynaqlanır."
+    },
+    {
+      "id": "s9",
+      "category": "stansiya",
+      "question": "Buxar turbinində səmərəlilik düşərsə ilk yoxlanılması gərəkən nədir?",
+      "options": {
+        "a": "Buxar parametrləri",
+        "b": "Kondensator vəziyyəti",
+        "c": "Turbin yastıqları",
+        "d": "İzolyasiya"
+      },
+      "correctAnswer": "b",
+      "explanation": "Buxar turbinində səmərəlilik düşməsi ən çox kondensator problemlərindən qaynaqlanır, ona görə ilk olaraq kondensator yoxlanmalıdır."
+    },
+    {
+      "id": "s10",
+      "category": "stansiya",
+      "question": "Stansiyanın sinxronlaşdırma sistemində problem yaranarsa nə edilməlidir?",
+      "options": {
+        "a": "Avtomatik sinxronlaşdırmanı söndürmək",
+        "b": "Əl ilə sinxronlaşdırma etmək",
+        "c": "Generatoru dayandırmaq",
+        "d": "Gərginliyi artırmaq"
+      },
+      "correctAnswer": "b",
+      "explanation": "Sinxronlaşdırma sistemində problem yarandıqda təhlükəsiz üsul əl ilə sinxronlaşdırmaya keçməkdir."
     }
   ]
 } 

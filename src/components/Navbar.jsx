@@ -17,11 +17,15 @@ export default function Navbar() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/logo.png"
-                alt="Azerishiq Logo"
-                width={40}
+                alt="Logo"
+                width={120}
                 height={40}
-                style={{ width: 'auto', height: '40px' }}
+                className="h-8 w-auto"
                 priority
+                style={{
+                  objectFit: 'contain',
+                  filter: 'brightness(0) invert(1)'
+                }}
               />
             </Link>
           </div>
