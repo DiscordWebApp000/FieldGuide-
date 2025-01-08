@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
 
 type SituationType = {
   id: string;
@@ -15,28 +16,50 @@ type SituationType = {
 };
 
 export function CheckList() {
+  const [checkedItems, setCheckedItems] = useState<{ [key: string]: boolean }>({});
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  const checklistItems = [
+    "Enerji kəsmə əməliyyatı yerinə yetirildi",
+    "Təhlükəsizlik avadanlıqları yoxlanıldı",
+    "Lazımi icazələr alındı",
+    "Təmir addımları tamamlandı",
+    "Son yoxlamalar aparıldı"
+  ];
+
+  if (!isClient) {
+    return (
+      <div className="space-y-2">
+        {checklistItems.map((item, index) => (
+          <div key={index} className="flex items-center gap-2">
+            <div className="w-4 h-4 border border-gray-300 rounded" />
+            <span className="text-gray-700">{item}</span>
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div className="space-y-2">
-      <div className="flex items-center gap-2">
-        <input type="checkbox" className="w-4 h-4 text-blue-600" />
-        <span className="text-gray-700">Enerji kəsmə əməliyyatı yerinə yetirildi</span>
-      </div>
-      <div className="flex items-center gap-2">
-        <input type="checkbox" className="w-4 h-4 text-blue-600" />
-        <span className="text-gray-700">Təhlükəsizlik avadanlıqları yoxlanıldı</span>
-      </div>
-      <div className="flex items-center gap-2">
-        <input type="checkbox" className="w-4 h-4 text-blue-600" />
-        <span className="text-gray-700">Lazımi icazələr alındı</span>
-      </div>
-      <div className="flex items-center gap-2">
-        <input type="checkbox" className="w-4 h-4 text-blue-600" />
-        <span className="text-gray-700">Təmir addımları tamamlandı</span>
-      </div>
-      <div className="flex items-center gap-2">
-        <input type="checkbox" className="w-4 h-4 text-blue-600" />
-        <span className="text-gray-700">Son yoxlamalar aparıldı</span>
-      </div>
+      {checklistItems.map((item, index) => (
+        <div key={index} className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            className="w-4 h-4 text-blue-600"
+            checked={checkedItems[index] || false}
+            onChange={(e) => setCheckedItems(prev => ({
+              ...prev,
+              [index]: e.target.checked
+            }))}
+          />
+          <span className="text-gray-700">{item}</span>
+        </div>
+      ))}
     </div>
   );
 }

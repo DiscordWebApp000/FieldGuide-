@@ -1,3 +1,4 @@
+
 import { notFound } from 'next/navigation';
 import { PageHeader, Section, CheckList } from './client';
 import situationsData from '@/data/situations.json';

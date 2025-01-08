@@ -18,9 +18,10 @@ export default function Navbar() {
               <Image
                 src="/logo.png"
                 alt="Azerishiq Logo"
-                width={100}
+                width={40}
                 height={40}
-                className="h-10 w-auto"
+                className="h-10 w-auto object-contain"
+                priority
               />
             </Link>
           </div>
