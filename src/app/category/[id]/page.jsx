@@ -3,15 +3,8 @@ import { CategoryHeader, SituationCard, SearchBox } from './components';
 
 const { situations } = situationsData;
 
-type SearchParams = { [key: string]: string | string[] | undefined };
-
-interface Props {
-  params: Promise<{ id: string }>;
-  searchParams: Promise<SearchParams>;
-}
-
-function getCategoryId(category: string): string {
-  const categoryIds: Record<string, string> = {
+function getCategoryId(category) {
+  const categoryIds = {
     'Stansiya': 'stansiya',
     'Transformator': 'transformator',
     'Mühafizə': 'muhafize',
@@ -22,7 +15,7 @@ function getCategoryId(category: string): string {
   return categoryIds[category] || category.toLowerCase().replace(/\s+/g, '-');
 }
 
-export default async function CategoryPage({ params, searchParams }: Props) {
+export default async function CategoryPage({ params, searchParams }) {
   const { id: categoryId } = await params;
   const resolvedSearchParams = await searchParams;
   const searchQuery = typeof resolvedSearchParams.q === 'string' ? resolvedSearchParams.q : '';

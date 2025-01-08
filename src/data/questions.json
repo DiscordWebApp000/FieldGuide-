@@ -27,6 +27,71 @@
       "explanation": "Transformatör arızalarında ilk kontrol edilmesi gereken yağ seviyesi ve kalitesidir, çünkü yağ hem izolasyon hem de soğutma görevi görür."
     },
     {
+      "id": "q2a",
+      "category": "trafo",
+      "question": "Transformatörde aşırı ısınmanın temel sebepleri arasında hangisi yer almaz?",
+      "options": {
+        "a": "Aşırı yüklenme",
+        "b": "Soğutma sistemi arızası",
+        "c": "Topraklama hatası",
+        "d": "Yağ seviyesi düşüklüğü"
+      },
+      "correctAnswer": "c",
+      "explanation": "Topraklama hatası doğrudan transformatörün aşırı ısınmasına neden olmaz. Diğer seçenekler ısınmanın temel sebepleridir."
+    },
+    {
+      "id": "q2b",
+      "category": "trafo",
+      "question": "Transformatör yağında nem oranı artışı neyin göstergesidir?",
+      "options": {
+        "a": "Sargı izolasyon problemi",
+        "b": "Mekanik hasar",
+        "c": "Aşırı yüklenme",
+        "d": "Kademe değiştirici arızası"
+      },
+      "correctAnswer": "a",
+      "explanation": "Transformatör yağında nem oranının artması genellikle sargı izolasyon problemlerinin bir göstergesidir ve acil müdahale gerektirir."
+    },
+    {
+      "id": "q2c",
+      "category": "trafo",
+      "question": "Transformatörde gaz rölesi alarmı geldiğinde ilk yapılması gereken nedir?",
+      "options": {
+        "a": "Transformatörü devreden çıkarmak",
+        "b": "Yağ numunesi almak",
+        "c": "Yükü azaltmak",
+        "d": "Soğutma sistemini kontrol etmek"
+      },
+      "correctAnswer": "a",
+      "explanation": "Gaz rölesi alarmı ciddi bir iç arıza göstergesidir ve transformatör hemen devreden çıkarılmalıdır."
+    },
+    {
+      "id": "q2d",
+      "category": "trafo",
+      "question": "Transformatör sargılarında kısa devre belirtileri nelerdir?",
+      "options": {
+        "a": "Ani akım artışı ve ses değişimi",
+        "b": "Yağ sıcaklığında yavaş artış",
+        "c": "Kademe değiştirici arızası",
+        "d": "Düşük güç faktörü"
+      },
+      "correctAnswer": "a",
+      "explanation": "Sargılarda kısa devre durumunda ani akım artışı ve transformatörün sesinde belirgin değişiklik gözlenir."
+    },
+    {
+      "id": "q2e",
+      "category": "trafo",
+      "question": "Transformatör bakımında yağ analizi hangi sıklıkla yapılmalıdır?",
+      "options": {
+        "a": "6 ayda bir",
+        "b": "Yılda bir",
+        "c": "2 yılda bir",
+        "d": "3 ayda bir"
+      },
+      "correctAnswer": "a",
+      "explanation": "Transformatör yağ analizi güvenli işletme için 6 ayda bir yapılmalıdır. Bu sayede olası arızalar önceden tespit edilebilir."
+    },
+    {
       "id": "q3",
       "category": "koruma",
       "question": "Kesicilerde SF6 gazının görevi nedir?",
@@ -129,6 +194,84 @@
       },
       "correctAnswer": "a",
       "explanation": "Akülerde sülfatlaşmayı önlemek için düzenli şarj-deşarj döngüleri uygulanmalıdır. Bu, akünün aktif malzemesinin formda kalmasını sağlar."
+    },
+    {
+      "id": "s1",
+      "category": "stansiya",
+      "question": "Elektrik stansiyasında bara arızası durumunda ilk yapılması gereken nedir?",
+      "options": {
+        "a": "Yedek baraya geçiş",
+        "b": "Tüm fiderleri açmak",
+        "c": "Arıza kaydı tutmak",
+        "d": "Topraklama yapmak"
+      },
+      "correctAnswer": "b",
+      "explanation": "Bara arızasında öncelikle tüm fiderler açılmalıdır, bu sayede arızanın yayılması ve ekipman hasarı önlenir."
+    },
+    {
+      "id": "s2",
+      "category": "stansiya",
+      "question": "Stansiyada röle koruma sisteminin periyodik testleri hangi sıklıkla yapılmalıdır?",
+      "options": {
+        "a": "3 ayda bir",
+        "b": "6 ayda bir",
+        "c": "Yılda bir",
+        "d": "2 yılda bir"
+      },
+      "correctAnswer": "b",
+      "explanation": "Röle koruma sistemlerinin güvenilir çalışması için 6 ayda bir periyodik testler yapılmalıdır."
+    },
+    {
+      "id": "s3",
+      "category": "stansiya",
+      "question": "Stansiyada akü sisteminde hücre dengesizliği tespit edildiğinde ne yapılmalıdır?",
+      "options": {
+        "a": "Dengeleme şarjı yapmak",
+        "b": "Aküyü değiştirmek",
+        "c": "Elektrolit eklemek",
+        "d": "Sistemi bypass etmek"
+      },
+      "correctAnswer": "a",
+      "explanation": "Akü hücrelerinde dengesizlik durumunda öncelikle dengeleme şarjı yapılmalıdır, bu işlem hücreleri eşit seviyeye getirir."
+    },
+    {
+      "id": "s4",
+      "category": "stansiya",
+      "question": "Stansiyada topraklama direnci ölçümü hangi mevsimde yapılmalıdır?",
+      "options": {
+        "a": "Yaz",
+        "b": "Kış",
+        "c": "İlkbahar",
+        "d": "Sonbahar"
+      },
+      "correctAnswer": "a",
+      "explanation": "Topraklama direnci ölçümü toprağın en kuru olduğu yaz mevsiminde yapılmalıdır, bu en kötü durum senaryosunu temsil eder."
+    },
+    {
+      "id": "s5",
+      "category": "stansiya",
+      "question": "Stansiyada kesici açma-kapama sayısı hangi durumda sıfırlanmalıdır?",
+      "options": {
+        "a": "Her bakımda",
+        "b": "Arıza sonrası",
+        "c": "Kontaklar değişince",
+        "d": "Yılda bir"
+      },
+      "correctAnswer": "c",
+      "explanation": "Kesici açma-kapama sayacı, kontaklar değiştirildiğinde sıfırlanmalıdır çünkü yeni kontakların ömür takibi başlar."
+    },
+    {
+      "id": "s6",
+      "category": "stansiya",
+      "question": "SCADA sisteminde haberleşme kaybı yaşandığında öncelikli kontrol noktası neresidir?",
+      "options": {
+        "a": "Fiber optik kablolar",
+        "b": "RTU cihazı",
+        "c": "Modem bağlantıları",
+        "d": "Sunucu durumu"
+      },
+      "correctAnswer": "b",
+      "explanation": "SCADA haberleşme kaybında ilk kontrol noktası RTU cihazıdır, çünkü saha verilerinin toplanma ve iletilme noktasıdır."
     }
   ]
 } 

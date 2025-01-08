@@ -3,20 +3,8 @@
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
-type SituationType = {
-  id: string;
-  category: string;
-  title: string;
-  shortDescription: string;
-  fullDescription: string;
-  icon: string;
-  causes: string[];
-  solutions: string[];
-  subheadings: string[];
-};
-
 export function CheckList() {
-  const [checkedItems, setCheckedItems] = useState<{ [key: string]: boolean }>({});
+  const [checkedItems, setCheckedItems] = useState({});
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -64,7 +52,7 @@ export function CheckList() {
   );
 }
 
-export function PageHeader({ situation }: { situation: SituationType }) {
+export function PageHeader({ situation }) {
   return (
     <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
       <div className="flex items-center gap-2 text-sm mb-4 text-gray-500">
@@ -86,11 +74,7 @@ export function PageHeader({ situation }: { situation: SituationType }) {
   );
 }
 
-export function Section({ title, children, type = "default" }: { 
-  title: string; 
-  children: React.ReactNode;
-  type?: "default" | "warning" | "steps" 
-}) {
+export function Section({ title, children, type = "default" }) {
   const bgColor = {
     default: "bg-white",
     warning: "bg-red-50",

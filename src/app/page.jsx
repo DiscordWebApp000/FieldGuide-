@@ -5,8 +5,8 @@ const { situations } = situationsData;
 import Link from 'next/link';
 import { useState } from 'react';
 
-function getCategoryId(category: string): string {
-  const categoryIds: Record<string, string> = {
+function getCategoryId(category) {
+  const categoryIds = {
     'Stansiya': 'stansiya',
     'Transformator': 'transformator',
     'Mühafizə': 'muhafize',
@@ -15,6 +15,18 @@ function getCategoryId(category: string): string {
     'Ətraf Mühit': 'etraf-muhit'
   };
   return categoryIds[category] || category.toLowerCase().replace(/\s+/g, '-');
+}
+
+function getCategoryTitle(category) {
+  const titles = {
+    'Stansiya': 'Stansiya Nasazlıqları',
+    'Transformator': 'Transformator Nasazlıqları',
+    'Mühafizə': 'Mühafizə Sistemi Nasazlıqları',
+    'Kabel': 'Kabel Nasazlıqları',
+    'Elektrik Panosu': 'Elektrik Panosu Nasazlıqları',
+    'Ətraf Mühit': 'Ətraf Mühit Nasazlıqları'
+  };
+  return titles[category] || category;
 }
 
 export default function Home() {
@@ -31,7 +43,7 @@ export default function Home() {
     }
     acc[situation.category].situations.push(situation);
     return acc;
-  }, {} as Record<string, { situations: typeof situations; title: string; icon: string; id: string }>);
+  }, {});
 
   const filteredCategories = Object.entries(categories).reduce((acc, [key, category]) => {
     const filteredSituations = category.situations.filter(situation =>
@@ -47,7 +59,7 @@ export default function Home() {
       };
     }
     return acc;
-  }, {} as typeof categories);
+  }, {});
 
   return (
     <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
@@ -125,16 +137,4 @@ export default function Home() {
       </div>
     </main>
   );
-}
-
-function getCategoryTitle(category: string): string {
-  const titles: Record<string, string> = {
-    'Stansiya': 'Stansiya Nasazlıqları',
-    'Transformator': 'Transformator Nasazlıqları',
-    'Mühafizə': 'Mühafizə Sistemi Nasazlıqları',
-    'Kabel': 'Kabel Nasazlıqları',
-    'Elektrik Panosu': 'Elektrik Panosu Nasazlıqları',
-    'Ətraf Mühit': 'Ətraf Mühit Nasazlıqları'
-  };
-  return titles[category] || category;
-}
+} 

@@ -4,14 +4,7 @@ import situationsData from '@/data/situations.json';
 
 const { situations } = situationsData;
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-  searchParams: { [key: string]: string | string[] | undefined };
-}
-
-export default async function Page({ params }: PageProps) {
+export default async function Page({ params }) {
   const { id } = await params;
   const situation = situations.find((s) => s.id === id);
 
@@ -92,4 +85,4 @@ export default async function Page({ params }: PageProps) {
 export const metadata = {
   title: 'Durum Detayları',
   description: 'Elektrik sistemlerinde karşılaşılan durumlar ve çözümleri',
-};
+}; 

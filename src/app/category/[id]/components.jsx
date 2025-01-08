@@ -2,10 +2,9 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import type { Situation } from '@/types/situation';
 
-function getCategoryTitle(categoryId: string): string {
-  const titles: Record<string, string> = {
+function getCategoryTitle(categoryId) {
+  const titles = {
     'stansiya': 'Stansiya Nasazlıqları',
     'transformator': 'Transformator Nasazlıqları',
     'muhafize': 'Mühafizə Sistemi Nasazlıqları',
@@ -16,7 +15,7 @@ function getCategoryTitle(categoryId: string): string {
   return titles[categoryId] || categoryId;
 }
 
-export function CategoryHeader({ categoryId, situationsCount }: { categoryId: string; situationsCount: number }) {
+export function CategoryHeader({ categoryId, situationsCount }) {
   return (
     <div className="bg-white shadow-sm rounded-xl p-6 mb-8">
       <div className="flex items-center space-x-2 text-sm text-gray-600 mb-4">
@@ -52,10 +51,10 @@ export function CategoryHeader({ categoryId, situationsCount }: { categoryId: st
   );
 }
 
-export function SearchBox({ defaultValue = '' }: { defaultValue?: string }) {
+export function SearchBox({ defaultValue = '' }) {
   const [value, setValue] = useState(defaultValue);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const url = new URL(window.location.href);
     url.searchParams.set('q', value);
@@ -82,7 +81,7 @@ export function SearchBox({ defaultValue = '' }: { defaultValue?: string }) {
   );
 }
 
-export function SituationCard({ situation }: { situation: Situation }) {
+export function SituationCard({ situation }) {
   return (
     <Link
       href={`/situations/${situation.id}`}
