@@ -1,6 +1,7 @@
 'use client';
 
-import { situations } from '@/data/situations.json';
+import situationsData from '@/data/situations.json';
+const { situations } = situationsData;
 import Link from 'next/link';
 import { useState } from 'react';
 
