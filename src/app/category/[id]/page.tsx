@@ -4,10 +4,10 @@ import { CategoryHeader, SituationCard, SearchBox } from './components';
 const { situations } = situationsData;
 
 interface PageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
-  searchParams: { [key: string]: string | string[] | undefined };
+  }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 function getCategoryId(category: string): string {
@@ -24,7 +24,8 @@ function getCategoryId(category: string): string {
 
 export default async function CategoryPage({ params, searchParams }: PageProps) {
   const { id: categoryId } = await params;
-  const searchQuery = ((await searchParams).q || '') as string;
+  const searchParamsData = await searchParams;
+  const searchQuery = typeof searchParamsData.q === 'string' ? searchParamsData.q : '';
   
   const categorySituations = situations.filter(
     (situation) => getCategoryId(situation.category) === categoryId
