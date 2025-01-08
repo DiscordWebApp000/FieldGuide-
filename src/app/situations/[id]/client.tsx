@@ -14,28 +14,31 @@ type SituationType = {
   subheadings: string[];
 };
 
-function getCategoryId(category: string): string {
-  const categoryIds: Record<string, string> = {
-    'Stansiya': 'stansiya',
-    'Transformator': 'transformator',
-    'Mühafizə': 'muhafize',
-    'Kabel': 'kabel',
-    'Elektrik Panosu': 'elektrik-panosu',
-    'Ətraf Mühit': 'etraf-muhit'
-  };
-  return categoryIds[category] || category.toLowerCase().replace(/\s+/g, '-');
-}
-
-function getCategoryTitle(category: string): string {
-  const titles: Record<string, string> = {
-    'Stansiya': 'Stansiya Nasazlıqları',
-    'Transformator': 'Transformator Nasazlıqları',
-    'Mühafizə': 'Mühafizə Sistemi Nasazlıqları',
-    'Kabel': 'Kabel Nasazlıqları',
-    'Elektrik Panosu': 'Elektrik Panosu Nasazlıqları',
-    'Ətraf Mühit': 'Ətraf Mühit Nasazlıqları'
-  };
-  return titles[category] || category;
+export function CheckList() {
+  return (
+    <div className="space-y-2">
+      <div className="flex items-center gap-2">
+        <input type="checkbox" className="w-4 h-4 text-blue-600" />
+        <span className="text-gray-700">Enerji kəsmə əməliyyatı yerinə yetirildi</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <input type="checkbox" className="w-4 h-4 text-blue-600" />
+        <span className="text-gray-700">Təhlükəsizlik avadanlıqları yoxlanıldı</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <input type="checkbox" className="w-4 h-4 text-blue-600" />
+        <span className="text-gray-700">Lazımi icazələr alındı</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <input type="checkbox" className="w-4 h-4 text-blue-600" />
+        <span className="text-gray-700">Təmir addımları tamamlandı</span>
+      </div>
+      <div className="flex items-center gap-2">
+        <input type="checkbox" className="w-4 h-4 text-blue-600" />
+        <span className="text-gray-700">Son yoxlamalar aparıldı</span>
+      </div>
+    </div>
+  );
 }
 
 export function PageHeader({ situation }: { situation: SituationType }) {
@@ -44,8 +47,8 @@ export function PageHeader({ situation }: { situation: SituationType }) {
       <div className="flex items-center gap-2 text-sm mb-4 text-gray-500">
         <Link href="/" className="hover:text-blue-600">Ana Səhifə</Link>
         <span>/</span>
-        <Link href={`/category/${getCategoryId(situation.category)}`} className="hover:text-blue-600">
-          {getCategoryTitle(situation.category)}
+        <Link href={`/category/${situation.category.toLowerCase()}`} className="hover:text-blue-600">
+          {situation.category}
         </Link>
       </div>
 

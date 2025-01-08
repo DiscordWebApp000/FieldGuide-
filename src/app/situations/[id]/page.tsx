@@ -1,16 +1,10 @@
 import { notFound } from 'next/navigation';
-import { PageHeader, Section } from './client';
+import { PageHeader, Section, CheckList } from './client';
 import situationsData from '@/data/situations.json';
 
 const { situations } = situationsData;
 
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
-
-export default function Page({ params }: PageProps) {
+export default function Page({ params }: { params: { id: string } }) {
   const situation = situations.find((s) => s.id === params.id);
 
   if (!situation) {
@@ -79,31 +73,15 @@ export default function Page({ params }: PageProps) {
 
           {/* KONTROL LİSTESİ */}
           <Section title="✅ YOXLAMA SİYAHISI">
-            <div className="space-y-2">
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4 text-blue-600" />
-                <span className="text-gray-700">Enerji kəsmə əməliyyatı yerinə yetirildi</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4 text-blue-600" />
-                <span className="text-gray-700">Təhlükəsizlik avadanlıqları yoxlanıldı</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4 text-blue-600" />
-                <span className="text-gray-700">Lazımi icazələr alındı</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4 text-blue-600" />
-                <span className="text-gray-700">Təmir addımları tamamlandı</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <input type="checkbox" className="w-4 h-4 text-blue-600" />
-                <span className="text-gray-700">Son yoxlamalar aparıldı</span>
-              </div>
-            </div>
+            <CheckList />
           </Section>
         </div>
       </div>
     </main>
   );
 }
+
+export const metadata = {
+  title: 'Durum Detayları',
+  description: 'Elektrik sistemlerinde karşılaşılan durumlar ve çözümleri',
+};
