@@ -89,16 +89,16 @@ function getCategoryId(category: string): string {
   return categoryIds[category] || category.toLowerCase().replace(/\s+/g, '-');
 }
 
-function getCategoryFromId(id: string): string {
-  const categoryMap: Record<string, string> = {
-    'stansiya': 'Stansiya',
-    'transformator': 'Transformator',
-    'muhafize': 'Mühafizə',
-    'kabel': 'Kabel',
-    'elektrik-panosu': 'Elektrik Panosu',
-    'etraf-muhit': 'Ətraf Mühit'
+function getCategoryTitle(categoryId: string): string {
+  const titles: Record<string, string> = {
+    'stansiya': 'Stansiya Nasazlıqları',
+    'transformator': 'Transformator Nasazlıqları',
+    'muhafize': 'Mühafizə Sistemi Nasazlıqları',
+    'kabel': 'Kabel Nasazlıqları',
+    'elektrik-panosu': 'Elektrik Panosu Nasazlıqları',
+    'etraf-muhit': 'Ətraf Mühit Nasazlıqları'
   };
-  return categoryMap[id] || id;
+  return titles[categoryId] || categoryId;
 }
 
 export default function CategoryPage({ params }: CategoryPageProps) {
@@ -162,16 +162,4 @@ export default function CategoryPage({ params }: CategoryPageProps) {
       </div>
     </main>
   );
-}
-
-function getCategoryTitle(category: string): string {
-  const titles: Record<string, string> = {
-    'Stansiya': 'Stansiya Nasazlıqları',
-    'Transformator': 'Transformator Nasazlıqları',
-    'Mühafizə': 'Mühafizə Sistemi Nasazlıqları',
-    'Kabel': 'Kabel Nasazlıqları',
-    'Elektrik Panosu': 'Elektrik Panosu Nasazlıqları',
-    'Ətraf Mühit': 'Ətraf Mühit Nasazlıqları'
-  };
-  return titles[category] || category;
 } 
