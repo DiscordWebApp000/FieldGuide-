@@ -211,7 +211,7 @@
     },
     {
       "id": "s3",
-      "category": "Muhafizə",
+      "category": "Muhafiza",
       "icon": "🛡️",
       "title": "Rele İşləmir",
       "shortDescription": "Mühafizə relesi işləmir və ya səhv işləyir",
@@ -227,6 +227,111 @@
         "Relenin fiziki vəziyyətini yoxlayın",
         "Əlaqələri yoxlayın və təmizləyin",
         "Enerji təchizatını yoxlayın"
+      ]
+    },
+    {
+      "id": "s24",
+      "category": "Muhafiza",
+      "icon": "⚡",
+      "title": "Diferensial Mühafizə Problemi",
+      "shortDescription": "Diferensial mühafizə sistemi düzgün işləmir",
+      "fullDescription": "Diferensial mühafizə sistemi səhv işləyir və ya lazım olduqda işə düşmür. Bu, avadanlığın ciddi zədələnməsinə səbəb ola bilər.",
+      "causes": [
+        "Cərəyan transformatorları nasazlığı",
+        "Kalibrləmə pozulması",
+        "Əlaqə xətlərində problem",
+        "Rele həssaslığı düzgün seçilməyib"
+      ],
+      "solutions": [
+        "Cərəyan transformatorlarını yoxlayın",
+        "Kalibrləməni yenidən aparın",
+        "Əlaqə xətlərini test edin",
+        "Rele həssaslığını tənzimləyin",
+        "Sistem testləri keçirin"
+      ]
+    },
+    {
+      "id": "s25",
+      "category": "Muhafiza",
+      "icon": "🔄",
+      "title": "APY Sistemi Problemi",
+      "shortDescription": "Avtomatik Təkrar Yandırma sistemi nasazdır",
+      "fullDescription": "Avtomatik Təkrar Yandırma (APY) sistemi düzgün işləmir. Açılmadan sonra təkrar qoşulma baş vermir və ya vaxtından əvvəl işə düşür.",
+      "causes": [
+        "Vaxt relesi nasazlığı",
+        "Məntiqi sxem pozulması",
+        "Köməkçi kontaktlar problemi",
+        "Proqram təminatı xətası"
+      ],
+      "solutions": [
+        "Vaxt relesini yoxlayın",
+        "Məntiqi sxemi test edin",
+        "Köməkçi kontaktları təmizləyin",
+        "Proqram təminatını yeniləyin",
+        "Sistem sazlamalarını yoxlayın"
+      ]
+    },
+    {
+      "id": "s26",
+      "category": "Muhafiza",
+      "icon": "🌩️",
+      "title": "İldırımdan Mühafizə Problemi",
+      "shortDescription": "İldırımdan mühafizə sistemi nasazdır",
+      "fullDescription": "İldırımdan mühafizə sistemi düzgün işləmir və ya zədələnib. Bu, avadanlığın ildırım zərbəsindən zədələnməsinə səbəb ola bilər.",
+      "causes": [
+        "Torpaqlama sistemi problemi",
+        "İldırım ötürücüsü zədələnməsi",
+        "Birləşmələrin korroziyası",
+        "Qoruyucu elementlərin köhnəlməsi"
+      ],
+      "solutions": [
+        "Torpaqlama müqavimətini ölçün",
+        "İldırım ötürücülərini yoxlayın",
+        "Korroziyaya uğramış hissələri dəyişin",
+        "Qoruyucu elementləri yeniləyin",
+        "Sistem testləri aparın"
+      ]
+    },
+    {
+      "id": "s27",
+      "category": "Muhafiza",
+      "icon": "📈",
+      "title": "Maksimal Cərəyan Mühafizəsi Problemi",
+      "shortDescription": "Maksimal cərəyan mühafizəsi düzgün işləmir",
+      "fullDescription": "Maksimal cərəyan mühafizəsi sistemi həddindən artıq cərəyanları aşkar etmir və ya səhv işləyir. Bu, avadanlığın həddindən artıq yüklənməsinə səbəb ola bilər.",
+      "causes": [
+        "Cərəyan sensoru nasazlığı",
+        "Hədd qiyməti səhv seçilib",
+        "Vaxt gecikməsi düzgün qurulmayıb",
+        "Əlaqə dövrəsi problemi"
+      ],
+      "solutions": [
+        "Cərəyan sensorlarını kalibr edin",
+        "Hədd qiymətlərini yoxlayın",
+        "Vaxt gecikmələrini tənzimləyin",
+        "Əlaqə dövrəsini test edin",
+        "Sistem testləri keçirin"
+      ]
+    },
+    {
+      "id": "s28",
+      "category": "Muhafiza",
+      "icon": "🔌",
+      "title": "Sıfır Ardıcıllıq Mühafizəsi Problemi",
+      "shortDescription": "Sıfır ardıcıllıq mühafizəsi nasazdır",
+      "fullDescription": "Sıfır ardıcıllıq mühafizəsi sistemi torpaq qapanmalarını aşkar etmir və ya səhv işləyir. Bu, təhlükəli vəziyyətlərə səbəb ola bilər.",
+      "causes": [
+        "Cərəyan transformatoru balansı pozulub",
+        "Həssaslıq səviyyəsi düzgün deyil",
+        "Filtr dövrəsi problemi",
+        "Rele nasazlığı"
+      ],
+      "solutions": [
+        "Cərəyan transformatorlarını balanslaşdırın",
+        "Həssaslıq səviyyəsini tənzimləyin",
+        "Filtr dövrəsini yoxlayın",
+        "Releni test edin",
+        "Sistem sazlamalarını yeniləyin"
       ]
     },
     {
@@ -336,7 +441,7 @@
     {
       "id": "s5",
       "category": "Elektrik Panosu",
-      "icon": "📊",
+      "icon": "��",
       "title": "Avtomat Açılır",
       "shortDescription": "Avtomatik açar tez-tez açılır",
       "fullDescription": "Paylayıcı şitdə avtomatik açar tez-tez açılır. Bu vəziyyət elektrik təchizatının kəsilməsinə və avadanlığın zədələnməsinə səbəb ola bilər.",
@@ -354,23 +459,108 @@
       ]
     },
     {
-      "id": "s6",
-      "category": "Ətraf Mühit",
-      "icon": "🌡️",
-      "title": "Həddindən Artıq İstilik",
-      "shortDescription": "Avadanlıq həddindən artıq qızır",
-      "fullDescription": "Elektrik avadanlığı normal iş rejimindən daha çox qızır. Bu vəziyyət avadanlığın sıradan çıxmasına səbəb ola bilər.",
+      "id": "s19",
+      "category": "Elektrik Panosu",
+      "icon": "🔥",
+      "title": "Pano Həddindən Artıq Qızması",
+      "shortDescription": "Elektrik panosu normal temperaturdan yüksək qızır",
+      "fullDescription": "Elektrik panosu və ya onun komponentləri həddindən artıq qızır. Bu, avadanlığın zədələnməsinə və yanğın təhlükəsinə səbəb ola bilər.",
       "causes": [
+        "Zəif kontakt birləşmələri",
         "Həddindən artıq yüklənmə",
-        "Soyutma sistemi problemi",
-        "Ventilyasiya çatışmazlığı",
-        "Ətraf mühit temperaturu yüksəkdir"
+        "Ventilyasiya problemi",
+        "Şinin oksidləşməsi"
       ],
       "solutions": [
-        "Yükü azaldın",
-        "Soyutma sistemini yoxlayın",
+        "Termovizor ilə yoxlama aparın",
+        "Kontakt birləşmələrini bərkidin",
         "Ventilyasiyanı yaxşılaşdırın",
-        "Temperatur monitorinqi qurun"
+        "Şinləri təmizləyin və bərkidin",
+        "Yük paylanmasını optimallaşdırın"
+      ]
+    },
+    {
+      "id": "s20",
+      "category": "Elektrik Panosu",
+      "icon": "⚡",
+      "title": "Şin Sistemi Problemi",
+      "shortDescription": "Şin sistemində nasazlıq aşkarlanıb",
+      "fullDescription": "Elektrik panosu şin sistemində problem var. Şinlərdə qızma, oksidləşmə və ya mexaniki zədələnmə müşahidə olunur.",
+      "causes": [
+        "Şin birləşmələrinin boşalması",
+        "Şin materialının yorğunluğu",
+        "Korroziya və oksidləşmə",
+        "Mexaniki zədələnmə"
+      ],
+      "solutions": [
+        "Şin birləşmələrini yoxlayın",
+        "Şinləri təmizləyin",
+        "Korroziyaya qarşı örtük çəkin",
+        "Zədələnmiş şinləri dəyişin",
+        "Birləşmə nöqtələrini bərkidin"
+      ]
+    },
+    {
+      "id": "s21",
+      "category": "Elektrik Panosu",
+      "icon": "💧",
+      "title": "Nəmlik Problemi",
+      "shortDescription": "Panoda nəmlik aşkarlanıb",
+      "fullDescription": "Elektrik panosunda nəmlik və ya kondensasiya müşahidə olunur. Bu, qısa qapanma və avadanlığın sıradan çıxmasına səbəb ola bilər.",
+      "causes": [
+        "Hermetiklik pozulması",
+        "Kondensasiya",
+        "Ətraf mühit şərtləri",
+        "Su sızması"
+      ],
+      "solutions": [
+        "Hermetikliyi bərpa edin",
+        "İsidici quraşdırın",
+        "Havalandırmanı yaxşılaşdırın",
+        "Nəmlik izolyasiyası qurun",
+        "Mütəmadi yoxlama aparın"
+      ]
+    },
+    {
+      "id": "s22",
+      "category": "Elektrik Panosu",
+      "icon": "🔌",
+      "title": "Klemma Problemi",
+      "shortDescription": "Klemma birləşmələrində nasazlıq",
+      "fullDescription": "Pano daxilində klemma birləşmələrində problem aşkarlanıb. Klemmalar boşalıb, qızır və ya zədələnib.",
+      "causes": [
+        "Birləşmələrin boşalması",
+        "Mexaniki zədə",
+        "Həddindən artıq yüklənmə",
+        "Klemma materialının yorğunluğu"
+      ],
+      "solutions": [
+        "Klemmaları vizual yoxlayın",
+        "Birləşmələri bərkidin",
+        "Zədələnmiş klemmaları dəyişin",
+        "Yük paylanmasını yoxlayın",
+        "Mütəmadi texniki baxış keçirin"
+      ]
+    },
+    {
+      "id": "s23",
+      "category": "Elektrik Panosu",
+      "icon": "🛡️",
+      "title": "İzolyasiya Problemi",
+      "shortDescription": "Panoda izolyasiya problemi aşkarlanıb",
+      "fullDescription": "Elektrik panosunda izolyasiya problemi müşahidə olunur. Bu, elektrik təhlükəsizliyini təhdid edir və qısa qapanmaya səbəb ola bilər.",
+      "causes": [
+        "İzolyasiya materialının köhnəlməsi",
+        "Mexaniki zədələnmə",
+        "Həddindən artıq qızma",
+        "Kimyəvi təsir"
+      ],
+      "solutions": [
+        "İzolyasiya müqavimətini ölçün",
+        "Zədələnmiş izolyasiyanı dəyişin",
+        "Mühafizə örtüklərini yoxlayın",
+        "Kabel kanallarını təmizləyin",
+        "Mütəmadi test aparın"
       ]
     }
   ]
