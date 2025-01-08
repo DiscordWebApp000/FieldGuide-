@@ -3,12 +3,12 @@
 import situationsData from '@/data/situations.json';
 const { situations } = situationsData;
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, use } from 'react';
 
 interface CategoryPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 function CategoryHeader({ categoryId }: { categoryId: string }) {
@@ -103,7 +103,7 @@ function getCategoryTitle(categoryId: string): string {
 
 export default function CategoryPage({ params }: CategoryPageProps) {
   const [searchQuery, setSearchQuery] = useState('');
-  const categoryId = params.id;
+  const { id: categoryId } = use(params);
   const categorySituations = situations.filter(
     (situation) => getCategoryId(situation.category) === categoryId
   );
