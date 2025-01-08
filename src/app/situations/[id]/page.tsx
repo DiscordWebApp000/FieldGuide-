@@ -1,3 +1,5 @@
+'use client';
+
 import situationsData from '@/data/situations.json';
 const { situations } = situationsData;
 import Link from 'next/link';
@@ -56,7 +58,7 @@ function Section({ title, children, type = "default" }: {
   );
 }
 
-export default function SituationPage({ params }: { params: { id: string } }) {
+export default async function SituationPage({ params }: { params: { id: string } }) {
   const situation = situations.find((s) => s.id === params.id);
 
   if (!situation) {
