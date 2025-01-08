@@ -8,10 +8,9 @@ type Props = {
   params: {
     id: string;
   };
-  searchParams: { [key: string]: string | string[] | undefined };
 };
 
-export default async function SituationPage({ params, searchParams }: Props) {
+export default async function SituationPage({ params }: Props) {
   const situation = situations.find((s) => s.id === params.id);
 
   if (!situation) {
