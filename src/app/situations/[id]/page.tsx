@@ -1,6 +1,6 @@
-import situationsData from '@/data/situations.json';
 import { notFound } from 'next/navigation';
 import { PageHeader, Section } from './client';
+import situationsData from '@/data/situations.json';
 
 const { situations } = situationsData;
 
@@ -100,4 +100,4 @@ export default function SituationPage({ params }: { params: { id: string } }) {
       </div>
     </main>
   );
-} 
+}
