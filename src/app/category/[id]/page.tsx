@@ -3,7 +3,13 @@
 import situationsData from '@/data/situations.json';
 const { situations } = situationsData;
 import Link from 'next/link';
-import { useState, use } from 'react';
+import { useState } from 'react';
+
+interface CategoryPageProps {
+  params: {
+    id: string;
+  };
+}
 
 function CategoryHeader({ categoryId }: { categoryId: string }) {
   return (
@@ -95,10 +101,9 @@ function getCategoryFromId(id: string): string {
   return categoryMap[id] || id;
 }
 
-export default function CategoryPage({ params }: { params: Promise<{ id: string }> }) {
+export default function CategoryPage({ params }: CategoryPageProps) {
   const [searchQuery, setSearchQuery] = useState('');
-  const { id: categoryId } = use(params);
-  const category = getCategoryFromId(categoryId);
+  const categoryId = params.id;
   const categorySituations = situations.filter(
     (situation) => getCategoryId(situation.category) === categoryId
   );
@@ -112,7 +117,7 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
   return (
     <main className="min-h-screen bg-gray-50">
       <div className="container mx-auto px-4 py-8">
-        <CategoryHeader categoryId={category} />
+        <CategoryHeader categoryId={categoryId} />
         
         <div className="mb-6">
           <div className="relative max-w-2xl mx-auto">
@@ -130,7 +135,7 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
             </div>
           </div>
         </div>
-        
+
         <div className="grid gap-4">
           {filteredSituations.map((situation) => (
             <SituationCard key={situation.id} situation={situation} />

@@ -1,11 +1,16 @@
-
 import { notFound } from 'next/navigation';
 import { PageHeader, Section, CheckList } from './client';
 import situationsData from '@/data/situations.json';
 
 const { situations } = situationsData;
 
-export default function Page({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
+
+export default function Page({ params }: PageProps) {
   const situation = situations.find((s) => s.id === params.id);
 
   if (!situation) {
