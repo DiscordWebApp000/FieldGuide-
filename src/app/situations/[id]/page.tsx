@@ -4,13 +4,13 @@ import situationsData from '@/data/situations.json';
 
 const { situations } = situationsData;
 
-type Props = {
+interface PageProps {
   params: {
     id: string;
   };
-};
+}
 
-export default async function SituationPage({ params }: Props) {
+export default function Page({ params }: PageProps) {
   const situation = situations.find((s) => s.id === params.id);
 
   if (!situation) {
