@@ -238,15 +238,15 @@ function CategoryCard({ category, questionCount, onSelect }) {
   return (
     <button
       onClick={onSelect}
-      className="w-full text-left bg-white rounded-xl shadow hover:shadow-lg transition-all duration-300 p-6 border border-gray-100"
+      className="w-full text-left bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg transition-all duration-300 p-6 border border-gray-100 dark:border-gray-700"
     >
       <div className="flex items-center gap-4">
-        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-50 to-blue-100">
+        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900 dark:to-blue-800">
           <span className="text-2xl">{category.icon}</span>
         </div>
         <div>
-          <h3 className="text-lg font-semibold text-gray-900">{category.title}</h3>
-          <p className="text-sm text-gray-600">{category.description}</p>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{category.title}</h3>
+          <p className="text-sm text-gray-600 dark:text-gray-300">{category.description}</p>
         </div>
       </div>
       <div className="mt-4 flex justify-between items-center text-sm">
@@ -264,9 +264,9 @@ function CategoryCard({ category, questionCount, onSelect }) {
 
 function DifficultyBadge({ difficulty }) {
   const colors = {
-    easy: 'bg-green-100 text-green-800',
-    medium: 'bg-yellow-100 text-yellow-800',
-    hard: 'bg-red-100 text-red-800'
+    easy: 'bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400',
+    medium: 'bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-400',
+    hard: 'bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400'
   };
 
   const labels = {
@@ -291,86 +291,58 @@ function QuestionCard({
   totalQuestions
 }) {
   return (
-    <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-8">
-      <div className="flex justify-between items-center mb-6">
-        <div className="flex items-center gap-3">
-          <span className="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
-            Sual {questionNumber}/{totalQuestions}
-          </span>
-          <DifficultyBadge difficulty={question.difficulty} />
-        </div>
+    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6">
+      <div className="flex items-center justify-between mb-4">
+        <DifficultyBadge difficulty={question.difficulty} />
+        <span className="text-sm text-gray-500 dark:text-gray-400">
+          Sual {questionNumber} / {totalQuestions}
+        </span>
       </div>
 
-      <h2 className="text-xl font-semibold text-gray-900 mb-8">{question.question}</h2>
+      <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-6">
+        {question.question}
+      </h2>
 
-      <div className="space-y-4">
-        {Object.entries(question.options).map(([key, value]) => (
-          <button
-            key={key}
-            onClick={() => onAnswer(key)}
-            disabled={showExplanation}
-            className={`group w-full text-left transition-all duration-200 ${
-              showExplanation
-                ? key === question.correctAnswer
-                  ? 'opacity-100'
-                  : selectedAnswer === key
-                  ? 'opacity-100'
-                  : 'opacity-60'
-                : 'opacity-100 hover:scale-[1.01]'
-            }`}
-          >
-            <div className={`flex items-center gap-4 p-4 rounded-xl border-2 transition-all duration-200 ${
-              showExplanation
-                ? key === question.correctAnswer
-                  ? 'bg-green-50 border-green-300 text-green-700'
-                  : selectedAnswer === key
-                  ? 'bg-red-50 border-red-300 text-red-700'
-                  : 'bg-white border-gray-200 text-gray-500'
-                : selectedAnswer === key
-                ? 'bg-blue-50 border-blue-300 text-blue-700 shadow-md'
-                : 'bg-white border-gray-200 hover:border-gray-300 hover:shadow-md group-hover:bg-gray-50'
-            }`}>
-              <div className={`min-w-[48px] h-12 flex items-center justify-center rounded-lg text-base font-medium ${
-                showExplanation
-                  ? key === question.correctAnswer
-                    ? 'bg-green-100 text-green-700'
-                    : selectedAnswer === key
-                    ? 'bg-red-100 text-red-700'
-                    : 'bg-gray-100 text-gray-500'
-                  : selectedAnswer === key
-                  ? 'bg-blue-100 text-blue-700'
-                  : 'bg-gray-50 text-gray-700 group-hover:bg-gray-100'
-              }`}>
-                {key.toUpperCase()}
-              </div>
-              <span className="flex-grow text-base text-gray-700">{value}</span>
-              {showExplanation && (
-                <div className="flex items-center justify-center min-w-[24px]">
-                  {key === question.correctAnswer ? (
-                    <svg className="w-6 h-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </svg>
-                  ) : selectedAnswer === key ? (
-                    <svg className="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  ) : null}
-                </div>
-              )}
-            </div>
-          </button>
-        ))}
+      <div className="space-y-3">
+        {Object.entries(question.options).map(([key, value]) => {
+          const isSelected = selectedAnswer === key;
+          const isCorrect = showExplanation && key === question.correctAnswer;
+          const isWrong = showExplanation && isSelected && key !== question.correctAnswer;
+
+          let buttonClasses = 'w-full flex items-center p-4 rounded-lg border transition-all duration-200 ';
+          
+          if (isSelected) {
+            buttonClasses += isWrong
+              ? 'border-red-200 dark:border-red-800 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400 '
+              : (showExplanation
+                ? 'border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 '
+                : 'border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400');
+          } else if (isCorrect) {
+            buttonClasses += 'border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400 ';
+          } else {
+            buttonClasses += 'border-gray-200 dark:border-gray-700 hover:border-blue-200 dark:hover:border-blue-800 hover:bg-blue-50 dark:hover:bg-blue-900/20 text-gray-700 dark:text-gray-300 ';
+          }
+
+          return (
+            <button
+              key={key}
+              className={buttonClasses}
+              onClick={() => !showExplanation && onAnswer(key)}
+              disabled={showExplanation}
+            >
+              <span className="w-8 h-8 flex-shrink-0 flex items-center justify-center rounded-full border border-current mr-3 uppercase">
+                {key}
+              </span>
+              {value}
+            </button>
+          );
+        })}
       </div>
 
       {showExplanation && (
-        <div className="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-100">
-          <h3 className="font-semibold text-blue-900 mb-2 flex items-center gap-2">
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            İzah:
-          </h3>
-          <p className="text-blue-800">{question.explanation}</p>
+        <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+          <h3 className="font-medium text-blue-700 dark:text-blue-400 mb-2">İzah:</h3>
+          <p className="text-blue-600 dark:text-blue-300">{question.explanation}</p>
         </div>
       )}
     </div>
@@ -393,40 +365,41 @@ function ResultCard({
 
   const getResultBadge = () => {
     const percentage = (correctCount / totalQuestions) * 100;
-    if (percentage >= 80) return 'bg-green-100 text-green-800';
-    if (percentage >= 60) return 'bg-yellow-100 text-yellow-800';
-    return 'bg-red-100 text-red-800';
+    if (percentage >= 80) {
+      return 'bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400';
+    }
+    if (percentage >= 60) {
+      return 'bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-400';
+    }
+    return 'bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400';
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm p-6 text-center">
-      <div className="mb-6">
-        <span className={`inline-flex items-center px-4 py-2 rounded-full text-lg font-medium ${getResultBadge()}`}>
-          {correctCount} / {totalQuestions}
-        </span>
-      </div>
-      
-      <h2 className="text-2xl font-bold text-gray-900 mb-2">
+    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-6 text-center">
+      <div className={`inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-4 ${getResultBadge()}`}>
         {getResultMessage()}
+      </div>
+
+      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+        {correctCount} / {totalQuestions} Doğru Cavab
       </h2>
       
-      <p className="text-gray-600 mb-8">
-        {correctCount} sualdan {totalQuestions} düzgün cavab verdiniz.
+      <p className="text-gray-600 dark:text-gray-300 mb-6">
+        {((correctCount / totalQuestions) * 100).toFixed(0)}% nəticə əldə etdiniz
       </p>
 
       <div className="space-y-3">
         <button
           onClick={onRestart}
-          className="w-full px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+          className="w-full px-4 py-2 bg-blue-600 dark:bg-blue-500 hover:bg-blue-700 dark:hover:bg-blue-600 text-white rounded-lg transition-colors"
         >
-          Yenidən başla
+          Yenidən Başla
         </button>
-        
         <button
           onClick={onSelectCategory}
-          className="w-full px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors"
+          className="w-full px-4 py-2 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-lg transition-colors"
         >
-          Başqa kateqoriya seç
+          Başqa Kateqoriya Seç
         </button>
       </div>
     </div>
@@ -436,49 +409,42 @@ function ResultCard({
 export default function TestPage() {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedAnswers, setSelectedAnswers] = useState({});
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
   const [showExplanation, setShowExplanation] = useState(false);
-  const [isTestComplete, setIsTestComplete] = useState(false);
-
-  // Filter questions by selected category
-  const categoryQuestions = questions.filter(q => q.categoryId === selectedCategory);
+  const [answers, setAnswers] = useState({});
 
   const handleCategorySelect = (categoryId) => {
     setSelectedCategory(categoryId);
     setCurrentQuestionIndex(0);
-    setSelectedAnswers({});
+    setSelectedAnswer(null);
     setShowExplanation(false);
-    setIsTestComplete(false);
+    setAnswers({});
   };
 
   const handleAnswer = (answer) => {
-    if (selectedAnswers[currentQuestionIndex]) return;
-    
-    setSelectedAnswers(prev => ({
+    setSelectedAnswer(answer);
+    setShowExplanation(true);
+    setAnswers(prev => ({
       ...prev,
       [currentQuestionIndex]: answer
     }));
-    setShowExplanation(true);
   };
 
   const handleNext = () => {
-    if (currentQuestionIndex < categoryQuestions.length - 1) {
-      setCurrentQuestionIndex(prev => prev + 1);
-      setShowExplanation(false);
-    } else {
-      setIsTestComplete(true);
-    }
+    setCurrentQuestionIndex(prev => prev + 1);
+    setSelectedAnswer(null);
+    setShowExplanation(false);
   };
 
   const handleRestart = () => {
     setCurrentQuestionIndex(0);
-    setSelectedAnswers({});
+    setSelectedAnswer(null);
     setShowExplanation(false);
-    setIsTestComplete(false);
+    setAnswers({});
   };
 
   const getCorrectAnswersCount = () => {
-    return Object.entries(selectedAnswers).reduce((count, [index, answer]) => {
+    return Object.entries(answers).reduce((count, [index, answer]) => {
       const question = categoryQuestions[parseInt(index)];
       return count + (answer === question.correctAnswer ? 1 : 0);
     }, 0);
@@ -486,95 +452,81 @@ export default function TestPage() {
 
   if (!selectedCategory) {
     return (
-      <div className="min-h-screen bg-gray-50">
-        <div className="max-w-4xl mx-auto p-6">
-          <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">Bilik Səviyyənizi Yoxlayın</h1>
-            <p className="text-gray-600">Elektrik sistemləri üzrə testlər</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {categories.map(category => (
-              <CategoryCard
-                key={category.id}
-                category={category}
-                questionCount={questions.filter(q => q.categoryId === category.id).length}
-                onSelect={() => handleCategorySelect(category.id)}
-              />
-            ))}
+      <div className="min-h-screen bg-gray-50 dark:bg-[#1e2837] py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-12">
+              <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                Bilik Səviyyənizi Yoxlayın
+              </h1>
+              <p className="text-gray-600 dark:text-gray-300">
+                Aşağıdakı kateqoriyalardan birini seçərək testə başlayın
+              </p>
+            </div>
+
+            <div className="grid gap-4">
+              {categories.map(category => (
+                <CategoryCard
+                  key={category.id}
+                  category={category}
+                  questionCount={questions.filter(q => q.categoryId === category.id).length}
+                  onSelect={() => handleCategorySelect(category.id)}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
     );
   }
 
-  if (isTestComplete) {
+  const categoryQuestions = questions.filter(q => q.categoryId === selectedCategory);
+  const currentQuestion = categoryQuestions[currentQuestionIndex];
+  const isLastQuestion = currentQuestionIndex === categoryQuestions.length - 1;
+  const hasCompleted = currentQuestionIndex >= categoryQuestions.length;
+
+  if (hasCompleted) {
     return (
-      <div className="max-w-2xl mx-auto p-6">
-        <ResultCard
-          correctCount={getCorrectAnswersCount()}
-          totalQuestions={categoryQuestions.length}
-          categoryId={selectedCategory}
-          onRestart={handleRestart}
-          onSelectCategory={() => setSelectedCategory(null)}
-        />
+      <div className="min-h-screen bg-gray-50 dark:bg-[#1e2837] py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-lg mx-auto">
+            <ResultCard
+              correctCount={getCorrectAnswersCount()}
+              totalQuestions={categoryQuestions.length}
+              categoryId={selectedCategory}
+              onRestart={handleRestart}
+              onSelectCategory={() => setSelectedCategory(null)}
+            />
+          </div>
+        </div>
       </div>
     );
   }
-
-  const currentQuestion = categoryQuestions[currentQuestionIndex];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
-      <div className="max-w-3xl mx-auto px-4">
-        <div className="mb-8">
-          <button
-            onClick={() => setSelectedCategory(null)}
-            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors"
-          >
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-            </svg>
-            <span>Kategoriyalara qayıt</span>
-          </button>
+    <div className="min-h-screen bg-gray-50 dark:bg-[#1e2837] py-12">
+      <div className="container mx-auto px-4">
+        <div className="max-w-2xl mx-auto">
+          <QuestionCard
+            question={currentQuestion}
+            selectedAnswer={selectedAnswer}
+            onAnswer={handleAnswer}
+            showExplanation={showExplanation}
+            questionNumber={currentQuestionIndex + 1}
+            totalQuestions={categoryQuestions.length}
+          />
+
+          {showExplanation && (
+            <div className="mt-6 flex justify-end">
+              <button
+                onClick={isLastQuestion ? handleNext : handleNext}
+                className="px-6 py-2 bg-blue-600 dark:bg-blue-500 hover:bg-blue-700 dark:hover:bg-blue-600 text-white rounded-lg transition-colors"
+              >
+                {isLastQuestion ? 'Nəticələri Gör' : 'Növbəti Sual'}
+              </button>
+            </div>
+          )}
         </div>
-
-        {currentQuestion && (
-          <>
-            <QuestionCard
-              question={currentQuestion}
-              selectedAnswer={selectedAnswers[currentQuestionIndex]}
-              onAnswer={handleAnswer}
-              showExplanation={showExplanation}
-              questionNumber={currentQuestionIndex + 1}
-              totalQuestions={categoryQuestions.length}
-            />
-
-            {showExplanation && (
-              <div className="mt-6 flex justify-end">
-                <button
-                  onClick={handleNext}
-                  className="px-8 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors flex items-center gap-2"
-                >
-                  {currentQuestionIndex < categoryQuestions.length - 1 ? (
-                    <>
-                      <span>Növbəti sual</span>
-                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                      </svg>
-                    </>
-                  ) : (
-                    <>
-                      <span>Testi bitir</span>
-                      <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </>
-                  )}
-                </button>
-              </div>
-            )}
-          </>
-        )}
       </div>
     </div>
   );

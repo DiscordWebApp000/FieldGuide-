@@ -8,14 +8,72 @@
     --foreground: 0 0% 3.9%;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: 0 0% 3.9%;
-      --foreground: 0 0% 98%;
-    }
+  :root[class~="dark"] {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
+/* Light tema için varsayılan renkler */
+:root {
+  color-scheme: light;
+  --bg-main: #ffffff;
+  --bg-secondary: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --border-color: #e5e7eb;
+  --accent-color: #2563eb;
+  --accent-hover: #1d4ed8;
+}
+
+/* Dark tema için renkler */
+:root[class~="dark"] {
+  color-scheme: dark;
+  --bg-main: #1e2837;
+  --bg-secondary: #1a1f2e;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --border-color: #374151;
+  --accent-color: #3b82f6;
+  --accent-hover: #60a5fa;
+}
+
+/* Genel stil uygulamaları */
 body {
-  @apply bg-background text-foreground;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+}
+
+/* Scrollbar stilleri */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+/* Tema geçiş animasyonu */
+* {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
