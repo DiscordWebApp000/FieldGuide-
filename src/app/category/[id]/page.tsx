@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import situationsData from '@/data/situations.json';
 import { CategoryHeader, SituationCard, SearchBox } from './components';
 

@@ -2,8 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import situationsData from '@/data/situations.json';
-const { situations } = situationsData;
+import type { Situation } from '@/types/situation';
 
 function getCategoryTitle(categoryId: string): string {
   const titles: Record<string, string> = {
@@ -83,7 +82,7 @@ export function SearchBox({ defaultValue = '' }: { defaultValue?: string }) {
   );
 }
 
-export function SituationCard({ situation }: { situation: typeof situations[0] }) {
+export function SituationCard({ situation }: { situation: Situation }) {
   return (
     <Link
       href={`/situations/${situation.id}`}
