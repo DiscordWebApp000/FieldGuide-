@@ -4,7 +4,14 @@ import situationsData from '@/data/situations.json';
 
 const { situations } = situationsData;
 
-export default function SituationPage({ params }: { params: { id: string } }) {
+type Props = {
+  params: {
+    id: string;
+  };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export default async function SituationPage({ params, searchParams }: Props) {
   const situation = situations.find((s) => s.id === params.id);
 
   if (!situation) {
