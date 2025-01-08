@@ -1,0 +1,134 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "category": "iletim-hatti",
+      "question": "Yüksek gerilim hatlarında en sık karşılaşılan arıza nedeni nedir?",
+      "options": {
+        "a": "İzolatör hasarı",
+        "b": "Kablo kopması",
+        "c": "Trafo arızası",
+        "d": "Sigorta atması"
+      },
+      "correctAnswer": "a",
+      "explanation": "İzolatör hasarı, yüksek gerilim hatlarında en sık karşılaşılan arıza nedenidir. Özellikle hava koşulları ve yaşlanma nedeniyle oluşabilir."
+    },
+    {
+      "id": "q2",
+      "category": "trafo",
+      "question": "Transformatör arızalarında aşağıdakilerden hangisi ilk kontrol edilmelidir?",
+      "options": {
+        "a": "Yağ seviyesi ve kalitesi",
+        "b": "Dış kaplama durumu",
+        "c": "Topraklama bağlantısı",
+        "d": "Etiket bilgileri"
+      },
+      "correctAnswer": "a",
+      "explanation": "Transformatör arızalarında ilk kontrol edilmesi gereken yağ seviyesi ve kalitesidir, çünkü yağ hem izolasyon hem de soğutma görevi görür."
+    },
+    {
+      "id": "q3",
+      "category": "koruma",
+      "question": "Kesicilerde SF6 gazının görevi nedir?",
+      "options": {
+        "a": "Soğutma sağlamak",
+        "b": "Ark söndürmek",
+        "c": "İzolasyon sağlamak",
+        "d": "Nem önlemek"
+      },
+      "correctAnswer": "b",
+      "explanation": "SF6 gazı, kesicilerde ark söndürme görevi görür ve yüksek dielektrik dayanımı sayesinde etkili bir şekilde arkı söndürür."
+    },
+    {
+      "id": "q4",
+      "category": "kablo",
+      "question": "Yeraltı kablolarında su sızıntısı tespit edildiğinde ilk yapılması gereken nedir?",
+      "options": {
+        "a": "Kabloyu değiştirmek",
+        "b": "Arıza yerini tespit etmek",
+        "c": "Gücü kesmek",
+        "d": "Yalıtım yapmak"
+      },
+      "correctAnswer": "c",
+      "explanation": "Su sızıntısı tespit edildiğinde, kısa devre ve elektrik çarpması riskini önlemek için ilk yapılması gereken güç kesme işlemidir."
+    },
+    {
+      "id": "q5",
+      "category": "koruma",
+      "question": "Parafudr arızasının en belirgin göstergesi nedir?",
+      "options": {
+        "a": "Aşırı ısınma",
+        "b": "Dış yüzeyde çatlak",
+        "c": "Sayaç göstergesi değişimi",
+        "d": "Ses çıkarması"
+      },
+      "correctAnswer": "b",
+      "explanation": "Parafudrlarda dış yüzeyde görülen çatlaklar, cihazın arızalandığının ve koruma görevini yerine getiremeyeceğinin en belirgin göstergesidir."
+    },
+    {
+      "id": "q6",
+      "category": "iletim-hatti",
+      "question": "İzolatörlerde UV radyasyonu hasarı nasıl önlenir?",
+      "options": {
+        "a": "Koruyucu kaplama uygulaması",
+        "b": "Sık yıkama",
+        "c": "Gölgeleme",
+        "d": "Boyama"
+      },
+      "correctAnswer": "a",
+      "explanation": "UV radyasyonu hasarını önlemek için izolatörlere özel koruyucu kaplamalar uygulanır. Bu kaplamalar UV ışınlarına karşı dayanıklıdır."
+    },
+    {
+      "id": "q7",
+      "category": "koruma",
+      "question": "Topraklama sisteminde korozyon tespit edildiğinde ne yapılmalıdır?",
+      "options": {
+        "a": "Üzerini boyamak",
+        "b": "Sistemi yenilemek",
+        "c": "Direnci ölçmek",
+        "d": "İzole etmek"
+      },
+      "correctAnswer": "b",
+      "explanation": "Topraklama sisteminde korozyon tespit edildiğinde, güvenlik açısından sistemin yenilenmesi gerekir. Diğer çözümler geçici ve yetersizdir."
+    },
+    {
+      "id": "q8",
+      "category": "trafo",
+      "question": "Gerilim regülasyonu sorununda kademe değiştirici arızalıysa ilk adım nedir?",
+      "options": {
+        "a": "Manuel kademe değişimi",
+        "b": "Transformatörü devre dışı bırakma",
+        "c": "Yük azaltma",
+        "d": "Bypass yapma"
+      },
+      "correctAnswer": "a",
+      "explanation": "Kademe değiştirici arızasında ilk adım, manuel kademe değişimi ile gerilimi regüle etmeye çalışmaktır."
+    },
+    {
+      "id": "q9",
+      "category": "koruma",
+      "question": "Orta gerilim hücrelerinde ark hasarı nasıl tespit edilir?",
+      "options": {
+        "a": "Görsel inceleme",
+        "b": "Termografik muayene",
+        "c": "Ses kontrolü",
+        "d": "Voltaj ölçümü"
+      },
+      "correctAnswer": "b",
+      "explanation": "Ark hasarı en etkili şekilde termografik muayene ile tespit edilir. Bu yöntem, ısı dağılımını göstererek potansiyel ark noktalarını belirler."
+    },
+    {
+      "id": "q10",
+      "category": "koruma",
+      "question": "Akü sistemlerinde sülfatlaşma sorunu nasıl önlenir?",
+      "options": {
+        "a": "Düzenli şarj-deşarj",
+        "b": "Saf su ilavesi",
+        "c": "Ortam sıcaklığı kontrolü",
+        "d": "Havalandırma"
+      },
+      "correctAnswer": "a",
+      "explanation": "Akülerde sülfatlaşmayı önlemek için düzenli şarj-deşarj döngüleri uygulanmalıdır. Bu, akünün aktif malzemesinin formda kalmasını sağlar."
+    }
+  ]
+} 

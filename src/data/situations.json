@@ -1,0 +1,992 @@
+{
+  "situations": [
+    {
+      "id": "stansiya-tez-kesici",
+      "category": "Stansiya",
+      "title": "Tez Qəza Kəsicisi Nasazlığı",
+      "shortDescription": "Yüksək gərginlik stansiyalarında tez qəza kəsicisi problemləri",
+      "fullDescription": "Tez qəza kəsicilərinin işində yaranan problemlər, sistemin mühafizə mexanizmini təsir edən kritik nasazlıqlardır.",
+      "subheadings": [
+        "Mexaniki Nasazlıqlar",
+        "Elektrik Nasazlıqları",
+        "Yağ Sistemi Problemləri",
+        "Nəzarət Sistemi Xətaları",
+        "Kontakt Sisteminin Vəziyyəti",
+        "Açma-Qapama Mexanizminin Problemləri",
+        "İzolyasiya Sisteminin Vəziyyəti",
+        "Siqnalizasiya və Bloklama Sistemləri"
+      ],
+      "causes": [
+        "Kəsicinin yanlış vaxtda işə düşməsi",
+        "Kəsici mexanizminin nasazlığı",
+        "Nəzarət dövrəsinin pozulması",
+        "Yağ səviyyəsinin düşməsi",
+        "Kontakt sisteminin yeyilməsi",
+        "İzolyasiya müqavimətinin azalması",
+        "Bloklama sisteminin nasazlığı",
+        "Mexaniki hissələrin köhnəlməsi"
+      ],
+      "solutions": [
+        "Kəsici mexanizminin yoxlanması",
+        "Nəzarət dövrəsinin təmiri",
+        "Yağ səviyyəsinin yoxlanması",
+        "Dövri test və təmir",
+        "Kontakt sisteminin təmizlənməsi",
+        "İzolyasiya müqavimətinin ölçülməsi",
+        "Bloklama sisteminin sazlanması",
+        "Mexaniki hissələrin yenilənməsi"
+      ],
+      "icon": "⚡"
+    },
+    {
+      "id": "stansiya-faza",
+      "category": "Stansiya",
+      "title": "Faza Sürüşməsi Nasazlığı",
+      "shortDescription": "Yüksək gərginlik stansiyalarında faza sürüşməsi problemləri",
+      "fullDescription": "Faza sürüşməsi, sistem tarazlığını pozan və avadanlıqlara zərər verə bilən əhəmiyyətli bir nasazlıq növüdür.",
+      "subheadings": [
+        "Faza Tarazlığı Problemləri",
+        "Sinxronizasiya Xətaları",
+        "Yük Paylanması Nasazlıqları",
+        "Faza Ardıcıllığı Problemləri",
+        "Gərginlik Qeyri-Stabilliyi",
+        "Harmonik Təhriflər",
+        "Güc Əmsalı Problemləri",
+        "Ölçü Cihazları Göstəriciləri"
+      ],
+      "causes": [
+        "Faza sırası dəyişimi",
+        "Qeyri-taraz yük paylanması",
+        "Sistem tezliyində dalğalanma",
+        "Sinxronizasiya problemi",
+        "Gərginlik səviyyəsinin qeyri-stabilliyi",
+        "Harmonik təhriflərin yaranması",
+        "Güc əmsalının aşağı düşməsi",
+        "Ölçü cihazlarının kalibrasiya pozğunluğu"
+      ],
+      "solutions": [
+        "Faza sırası yoxlanışı",
+        "Yük tarazlığı tənzimlənməsi",
+        "Tezlik stabilizasiyası",
+        "Sinxronizasiya sistemi təmiri",
+        "Gərginlik tənzimləyicisinin sazlanması",
+        "Harmonik filtrin quraşdırılması",
+        "Kompensasiya qurğularının tənzimlənməsi",
+        "Ölçü cihazlarının kalibrasyası"
+      ],
+      "icon": "⚡"
+    },
+    {
+      "id": "stansiya-generator",
+      "category": "Stansiya",
+      "title": "Generator Nasazlığı",
+      "shortDescription": "Elektrik stansiyalarında generator sistemlərində yaranan problemlər",
+      "fullDescription": "Generator nasazlıqları, elektrik enerjisi istehsalının əsas komponenti olan generatorlarda yaranan texniki problemlərdir.",
+      "subheadings": [
+        "Rotor Sisteminin Problemləri",
+        "Stator Dolağı Nasazlıqları",
+        "Soyutma Sistemi Xətaları",
+        "Yastıq Problemləri",
+        "Həyəcanlandırma Sistemi Nasazlıqları",
+        "Tezlik Tənzimləmə Problemləri",
+        "Sinxronizasiya Xətaları",
+        "Mühafizə Sistemləri Problemləri"
+      ],
+      "causes": [
+        "Rotor dolağının zədələnməsi",
+        "Stator izolyasiyasının pozulması",
+        "Soyutma sisteminin qeyri-effektivliyi",
+        "Yastıqların yeyilməsi",
+        "Həyəcanlandırma sisteminin nasazlığı",
+        "Tezlik tənzimləyicisinin xətası",
+        "Sinxronizasiya pozğunluğu",
+        "Mühafizə sistemlərinin işləməməsi"
+      ],
+      "solutions": [
+        "Rotor sisteminin yoxlanması",
+        "Stator dolağının təmiri",
+        "Soyutma sisteminin təmizlənməsi",
+        "Yastıqların dəyişdirilməsi",
+        "Həyəcanlandırma sisteminin sazlanması",
+        "Tezlik tənzimləyicisinin kalibrasiyası",
+        "Sinxronizasiya parametrlərinin tənzimlənməsi",
+        "Mühafizə sistemlərinin yoxlanması"
+      ],
+      "icon": "⚡"
+    },
+    {
+      "id": "stansiya-idareetme",
+      "category": "Stansiya",
+      "title": "İdarəetmə Sistemi Nasazlığı",
+      "shortDescription": "Stansiya idarəetmə sistemində yaranan texniki problemlər",
+      "fullDescription": "İdarəetmə sistemi nasazlıqları, stansiyanın avtomatik və manual idarə edilməsində yaranan texniki xətalardır.",
+      "subheadings": [
+        "SCADA Sistemi Problemləri",
+        "PLC Nasazlıqları",
+        "Sensor və Ölçü Cihazları",
+        "Kommunikasiya Xətaları",
+        "HMI İnterfeys Problemləri",
+        "Verilənlər Bazası Xətaları",
+        "Proqram Təminatı Problemləri",
+        "Arxivləşdirmə Sistemi Nasazlıqları"
+      ],
+      "causes": [
+        "SCADA sisteminin donması",
+        "PLC proqram xətaları",
+        "Sensor kalibrasiya pozğunluğu",
+        "Şəbəkə bağlantısı problemləri",
+        "HMI ekran xətaları",
+        "Verilənlər bazası korrupsiyası",
+        "Proqram təminatı yenilənmə xətaları",
+        "Arxiv sisteminin dolması"
+      ],
+      "solutions": [
+        "SCADA sisteminin yenidən başladılması",
+        "PLC proqramının yoxlanması",
+        "Sensorların kalibrasiyası",
+        "Şəbəkə bağlantısının bərpası",
+        "HMI sisteminin yenilənməsi",
+        "Verilənlər bazasının bərpası",
+        "Proqram təminatının yenilənməsi",
+        "Arxiv sisteminin təmizlənməsi"
+      ],
+      "icon": "🖥️"
+    },
+    {
+      "id": "stansiya-kompensasiya",
+      "category": "Stansiya",
+      "title": "Kompensasiya Qurğusu Nasazlığı",
+      "shortDescription": "Reaktiv güc kompensasiya sistemlərində yaranan nasazlıqlar",
+      "fullDescription": "Kompensasiya qurğusu nasazlıqları, reaktiv gücün tənzimlənməsində və enerji keyfiyyətinin təmin edilməsində yaranan problemlərdir.",
+      "subheadings": [
+        "Kondensator Batareyaları",
+        "Reaktor Sistemləri",
+        "Avtomatik Tənzimləmə",
+        "Mühafizə Sistemləri",
+        "Harmonik Filtrlər",
+        "Kommutasiya Avadanlığı",
+        "Ölçü Sistemləri",
+        "İdarəetmə Bloku"
+      ],
+      "causes": [
+        "Kondensator qruplarının sıradan çıxması",
+        "Reaktor sisteminin nasazlığı",
+        "Avtomatik tənzimləmə xətası",
+        "Mühafizə sisteminin işləməməsi",
+        "Harmonik filtrlərin zədələnməsi",
+        "Kommutasiya aparatlarının nasazlığı",
+        "Ölçü cihazlarının xətası",
+        "İdarəetmə blokunda proqram xətası"
+      ],
+      "solutions": [
+        "Kondensator batareyalarının yoxlanması",
+        "Reaktor sisteminin təmiri",
+        "Tənzimləmə parametrlərinin düzəldilməsi",
+        "Mühafizə sisteminin sazlanması",
+        "Harmonik filtrlərin dəyişdirilməsi",
+        "Kommutasiya aparatlarının təmiri",
+        "Ölçü cihazlarının kalibrasiyası",
+        "İdarəetmə blokunun proqramlaşdırılması"
+      ],
+      "icon": "⚡"
+    },
+    {
+      "id": "transformator-sargi",
+      "category": "Transformator",
+      "title": "Sarğı Nasazlıqları",
+      "shortDescription": "Transformator sarğılarında yaranan nasazlıqlar",
+      "fullDescription": "Transformator sarğı nasazlıqları, transformatorun işləməsinə birbaşa təsir edən kritik problemlərdir.",
+      "subheadings": [
+        "İzolyasiya Problemləri",
+        "Qızma Nasazlıqları",
+        "Mexaniki Zədələnmələr",
+        "Sarğı Sızması Problemləri",
+        "Sarğılar Arası Qısa Qapanma",
+        "Nüvə Maqnit Sistemi Nasazlıqları",
+        "Sarğı Müqaviməti Dəyişiklikləri",
+        "Yüksək Harmonik Təsirləri"
+      ],
+      "causes": [
+        "Qısa qapanma sarğıları",
+        "Sarğıların həddindən artıq qızması",
+        "İzolyasiya pozulması",
+        "Mexaniki deformasiya",
+        "Nüvə maqnit sisteminin zədələnməsi",
+        "Sarğılar arası qısa qapanma",
+        "Yüksək harmoniklərin təsiri",
+        "Həddindən artıq yüklənmə"
+      ],
+      "solutions": [
+        "Sarğı müqaviməti ölçüsü",
+        "İzolyasiya testləri",
+        "Termoqrafik müayinə",
+        "Sarğı təmiri və ya dəyişimi",
+        "Nüvə maqnit sisteminin yoxlanması",
+        "Sarğılar arası izolyasiyanın bərpası",
+        "Harmonik filtrlərin quraşdırılması",
+        "Yük rejiminin optimallaşdırılması"
+      ],
+      "icon": "💧"
+    },
+    {
+      "id": "transformator-yag",
+      "category": "Transformator",
+      "title": "Yağ Nasazlıqları",
+      "shortDescription": "Transformator yağı ilə əlaqəli nasazlıqlar",
+      "fullDescription": "Transformator yağı nasazlıqları, soyutma və izolyasiya performansına təsir edən əhəmiyyətli problemlərdir.",
+      "subheadings": [
+        "Yağ Keyfiyyəti Problemləri",
+        "Sızma Nasazlıqları",
+        "Soyutma Sistemi Xətaları",
+        "Yağ Çirklənməsi Problemləri",
+        "Yağ Tərkibində Qaz Analizi",
+        "Dielektrik Möhkəmliyi Problemləri",
+        "Yağ Oksidləşməsi",
+        "Nəmlik Səviyyəsi Dəyişiklikləri"
+      ],
+      "causes": [
+        "Yağ sızması",
+        "Yağ səviyyəsinin düşməsi",
+        "Yağın çirklənməsi",
+        "Nəm nisbətinin yüksəlməsi",
+        "Yağda həll olmuş qazların artması",
+        "Dielektrik möhkəmliyinin azalması",
+        "Yağın turşuluq dərəcəsinin artması",
+        "Soyutma sisteminin qeyri-effektivliyi"
+      ],
+      "solutions": [
+        "Yağ analizi",
+        "Sızma aşkarlanması və təmiri",
+        "Yağ filtrasiyası",
+        "Nəm aradan qaldırılması",
+        "Həll olmuş qazların analizi",
+        "Dielektrik sınaqları",
+        "Yağın regenerasiyası",
+        "Soyutma sisteminin təmiri"
+      ],
+      "icon": "💧"
+    },
+    {
+      "id": "transformator-soyutma",
+      "category": "Transformator",
+      "title": "Soyutma Sistemi Nasazlığı",
+      "shortDescription": "Transformator soyutma sistemində yaranan problemlər",
+      "fullDescription": "Transformator soyutma sistemi nasazlıqları, avadanlığın normal temperatur rejimini pozan və həyat müddətini azaldan problemlərdir.",
+      "subheadings": [
+        "Radiator Problemləri",
+        "Ventilyator Nasazlıqları",
+        "Soyutma Borularının Vəziyyəti",
+        "Termostat Problemləri",
+        "Hava Dövriyyəsi Xətaları",
+        "Temperatur Sensoru Nasazlıqları",
+        "Soyutma Effektivliyi",
+        "İstilik Mübadiləsi Problemləri"
+      ],
+      "causes": [
+        "Radiatorların çirklənməsi",
+        "Ventilyatorların sıradan çıxması",
+        "Soyutma borularının tıxanması",
+        "Termostatın nasazlığı",
+        "Hava dövriyyəsinin pozulması",
+        "Temperatur sensorunun xətası",
+        "Soyutma sisteminin effektivliyinin azalması",
+        "İstilik mübadiləsinin zəifləməsi"
+      ],
+      "solutions": [
+        "Radiatorların təmizlənməsi",
+        "Ventilyatorların təmiri/dəyişdirilməsi",
+        "Boruların təmizlənməsi",
+        "Termostatın kalibrasiyası",
+        "Hava dövriyyəsinin bərpası",
+        "Temperatur sensorunun dəyişdirilməsi",
+        "Soyutma sisteminin optimallaşdırılması",
+        "İstilik mübadiləsi sisteminin yoxlanması"
+      ],
+      "icon": "❄️"
+    },
+    {
+      "id": "transformator-nuve",
+      "category": "Transformator",
+      "title": "Nüvə Nasazlığı",
+      "shortDescription": "Transformator nüvəsində yaranan texniki problemlər",
+      "fullDescription": "Transformator nüvəsi nasazlıqları, maqnit sahəsinin yaranmasında və enerji ötürülməsində yaranan problemlərdir.",
+      "subheadings": [
+        "Maqnit Dövrəsi Problemləri",
+        "Nüvə Lövhələri Vəziyyəti",
+        "İstilik Rejimi Pozuntuları",
+        "Mexaniki Deformasiyalar",
+        "Maqnit Selinin Paylanması",
+        "Nüvə Torpaqlanması",
+        "Vibrasiya Problemləri",
+        "Maqnit Müqaviməti Dəyişiklikləri"
+      ],
+      "causes": [
+        "Nüvə lövhələrinin zədələnməsi",
+        "Maqnit dövrəsinin pozulması",
+        "Həddindən artıq qızma",
+        "Mexaniki zərbələr",
+        "Maqnit selinin qeyri-bərabər paylanması",
+        "Torpaqlanma sisteminin pozulması",
+        "Yüksək vibrasiya",
+        "Maqnit xassələrinin pisləşməsi"
+      ],
+      "solutions": [
+        "Nüvə lövhələrinin yoxlanması",
+        "Maqnit dövrəsinin bərpası",
+        "İstilik rejiminin normallaşdırılması",
+        "Mexaniki möhkəmliyin yoxlanması",
+        "Maqnit selinin ölçülməsi",
+        "Torpaqlanma sisteminin yoxlanması",
+        "Vibrasiya səviyyəsinin azaldılması",
+        "Maqnit xassələrinin testləri"
+      ],
+      "icon": "🔧"
+    },
+    {
+      "id": "transformator-izolyasiya",
+      "category": "Transformator",
+      "title": "İzolyasiya Sistemi Nasazlığı",
+      "shortDescription": "Transformator izolyasiya sistemində yaranan nasazlıqlar",
+      "fullDescription": "İzolyasiya sistemi nasazlıqları, transformatorun elektrik təhlükəsizliyini və etibarlılığını təhdid edən kritik problemlərdir.",
+      "subheadings": [
+        "Bərk İzolyasiya Problemləri",
+        "Maye İzolyasiya Vəziyyəti",
+        "Nəmlik Səviyyəsi",
+        "Qaz Analizi Göstəriciləri",
+        "İzolyasiya Müqaviməti",
+        "Qısaqapanma Dayanıqlığı",
+        "İmpuls Möhkəmliyi",
+        "Köhnəlmə Dərəcəsi"
+      ],
+      "causes": [
+        "İzolyasiyanın köhnəlməsi",
+        "Nəmliyin artması",
+        "Həll olmuş qazların yığılması",
+        "İzolyasiya müqavimətinin azalması",
+        "Qısaqapanma zədələri",
+        "İmpuls gərginliklərinin təsiri",
+        "Temperatur rejiminin pozulması",
+        "Mexaniki zədələnmələr"
+      ],
+      "solutions": [
+        "İzolyasiya vəziyyətinin diaqnostikası",
+        "Qurutma prosesinin aparılması",
+        "Qaz analizi testləri",
+        "İzolyasiya müqavimətinin ölçülməsi",
+        "Qısaqapanma testləri",
+        "İmpuls sınaqları",
+        "Temperatur monitorinqi",
+        "Mexaniki möhkəmliyin yoxlanması"
+      ],
+      "icon": "🔌"
+    },
+    {
+      "id": "kabel-qisa-qapanma",
+      "category": "Kabel",
+      "title": "Qısa Qapanma Nasazlıqları",
+      "shortDescription": "Kabellərdə yaranan qısa qapanma problemləri",
+      "fullDescription": "Kabel qısa qapanma nasazlıqları, sistemin təhlükəsizliyini təhdid edən və təcili müdaxilə tələb edən hallardır.",
+      "subheadings": [
+        "İzolyasiya Problemləri",
+        "Mexaniki Zədələnmələr",
+        "Həddindən Artıq Yüklənmə",
+        "Kabel Zədələnməsi",
+        "Birləşmə Nöqtələri Problemləri",
+        "Kabel Ekranı Nasazlıqları",
+        "Torpaqlama Sisteminin Vəziyyəti",
+        "Kabel Muftası Problemləri"
+      ],
+      "causes": [
+        "İzolyasiya zədələnməsi",
+        "Mexaniki zədə",
+        "Nəm daxil olması",
+        "Həddindən artıq yüklənmə",
+        "Kabel muftalarının qüsurları",
+        "Ekran sisteminin pozulması",
+        "Torpaqlama sisteminin nasazlığı",
+        "İstilik təsirindən zədələnmə"
+      ],
+      "solutions": [
+        "Nasazlıq yerinin təyini",
+        "Zədələnmiş sahənin təmiri",
+        "İzolyasiya yenilənməsi",
+        "Kabel dəyişimi",
+        "Kabel muftalarının yenilənməsi",
+        "Ekran sisteminin bərpası",
+        "Torpaqlama sisteminin yoxlanması",
+        "İstilik rejiminin normallaşdırılması"
+      ],
+      "icon": "⚡"
+    },
+    {
+      "id": "kabel-izolyasiya",
+      "category": "Kabel",
+      "title": "İzolyasiya Nasazlığı",
+      "shortDescription": "Kabel izolyasiyasında yaranan problemlər",
+      "fullDescription": "Kabel izolyasiya nasazlıqları, kabellərin etibarlı və təhlükəsiz işləməsinə mane olan kritik problemlərdir.",
+      "subheadings": [
+        "İzolyasiya Müqaviməti",
+        "Nəmlik Təsiri",
+        "Mexaniki Zədələnmə",
+        "Köhnəlmə Problemləri",
+        "Kimyəvi Təsirlər",
+        "İstilik Təsiri",
+        "Ətraf Mühit Təsiri",
+        "Test və Diaqnostika"
+      ],
+      "causes": [
+        "İzolyasiyanın köhnəlməsi",
+        "Nəmliyin daxil olması",
+        "Mexaniki zədələnmə",
+        "Həddindən artıq qızma",
+        "Kimyəvi maddələrin təsiri",
+        "Günəş radiasiyası",
+        "Ətraf mühit şərtləri",
+        "Qeyri-düzgün quraşdırma"
+      ],
+      "solutions": [
+        "İzolyasiya müqavimətinin ölçülməsi",
+        "Nəmliyin aradan qaldırılması",
+        "Zədələnmiş hissənin təmiri",
+        "İstilik rejiminin normallaşdırılması",
+        "Kimyəvi təsirlərdən mühafizə",
+        "Günəşdən qorunma",
+        "Mühafizə örtüyünün quraşdırılması",
+        "Düzgün quraşdırma təlimatı"
+      ],
+      "icon": "🔌"
+    },
+    {
+      "id": "kabel-mexaniki",
+      "category": "Kabel",
+      "title": "Mexaniki Zədələnmə",
+      "shortDescription": "Kabellərdə yaranan mexaniki zədələnmə problemləri",
+      "fullDescription": "Kabel mexaniki zədələnmələri, xarici təsirlər nəticəsində yaranan və kabellərin fiziki bütövlüyünü pozan problemlərdir.",
+      "subheadings": [
+        "Xarici Zərbələr",
+        "Əyilmə Problemləri",
+        "Dartılma Zədələri",
+        "Kəsilmə və Cızılmalar",
+        "Vibrasiya Təsiri",
+        "Quraşdırma Zədələri",
+        "Təbii Təsirlər",
+        "Təmir və Bərpa"
+      ],
+      "causes": [
+        "Tikinti işləri zamanı zədələnmə",
+        "Həddindən artıq əyilmə",
+        "Həddindən artıq dartılma",
+        "Kəsici alətlərlə zədələnmə",
+        "Yüksək vibrasiya",
+        "Qeyri-düzgün quraşdırma",
+        "Təbii fəlakətlər",
+        "İstismar qaydalarının pozulması"
+      ],
+      "solutions": [
+        "Zədələnmə yerinin müəyyənləşdirilməsi",
+        "Əyilmə radiusunun düzəldilməsi",
+        "Dartılmanın aradan qaldırılması",
+        "Zədələnmiş hissənin dəyişdirilməsi",
+        "Vibrasiya izolyasiyası",
+        "Düzgün quraşdırma",
+        "Təbii təsirlərdən mühafizə",
+        "İstismar qaydalarına riayət"
+      ],
+      "icon": "🛠️"
+    },
+    {
+      "id": "kabel-birlesme",
+      "category": "Kabel",
+      "title": "Birləşmə Nöqtələri Nasazlığı",
+      "shortDescription": "Kabel birləşmə nöqtələrində yaranan problemlər",
+      "fullDescription": "Kabel birləşmə nöqtələri nasazlıqları, elektrik kontaktının keyfiyyətini pozan və sistem etibarlılığını azaldan problemlərdir.",
+      "subheadings": [
+        "Muftalar",
+        "Klem Birləşmələri",
+        "Lehim Birləşmələri",
+        "Sıxma Kontaktları",
+        "İzolyasiya Problemləri",
+        "Korroziya",
+        "Hərarət Rejimi",
+        "Keçid Müqaviməti"
+      ],
+      "causes": [
+        "Mufta quraşdırma xətası",
+        "Klem birləşməsinin boşalması",
+        "Lehim birləşməsinin pozulması",
+        "Sıxma kontaktının zəifləməsi",
+        "İzolyasiyanın pozulması",
+        "Korroziya prosesi",
+        "Həddindən artıq qızma",
+        "Keçid müqavimətinin artması"
+      ],
+      "solutions": [
+        "Muftanın yenidən quraşdırılması",
+        "Klem birləşməsinin bərkidilməsi",
+        "Lehim birləşməsinin bərpası",
+        "Sıxma kontaktının yenilənməsi",
+        "İzolyasiyanın bərpası",
+        "Korroziyadan mühafizə",
+        "Hərarət rejiminin normallaşdırılması",
+        "Keçid müqavimətinin azaldılması"
+      ],
+      "icon": "🔗"
+    },
+    {
+      "id": "muhafize-rele",
+      "category": "Mühafizə",
+      "title": "Mühafizə Rele Nasazlıqları",
+      "shortDescription": "Mühafizə relesinin işləməməsi və ya səhv işləməsi",
+      "fullDescription": "Mühafizə relesi nasazlıqları, sistemin təhlükəsizliyini təmin edən əsas komponentlərin problemləridir.",
+      "subheadings": [
+        "Rele Kontakt Problemləri",
+        "Kalibrasiya Nasazlıqları",
+        "Elektron Dövrə Xətaları",
+        "Cərəyan Artışı Problemləri",
+        "Diferensial Mühafizə Nasazlıqları",
+        "Məsafə Mühafizəsi Problemləri",
+        "Rele Sınaq və Test Nəticələri",
+        "Mühafizə Koordinasiyası"
+      ],
+      "causes": [
+        "Həddindən artıq cərəyan relesi nasazlığı",
+        "Sızma cərəyanı qorunmasının deaktiv olması",
+        "Rele kontaktlarının yanması",
+        "Kalibrasiya problemləri",
+        "Diferensial mühafizənin nasazlığı",
+        "Məsafə mühafizəsinin səhv işləməsi",
+        "Rele sınaq nəticələrinin qeyri-qənaətbəxş olması",
+        "Mühafizə koordinasiyasının pozulması"
+      ],
+      "solutions": [
+        "Rele müayinəsi",
+        "Kontaktlar yoxlanışı",
+        "Cərəyan artışı testləri",
+        "Kalibrasiya düzəlişi",
+        "Diferensial mühafizənin sazlanması",
+        "Məsafə mühafizəsinin tənzimlənməsi",
+        "Kompleks sınaq və testlərin keçirilməsi",
+        "Mühafizə koordinasiyasının yenidən qurulması"
+      ],
+      "icon": "🛡️"
+    },
+    {
+      "id": "muhafize-diferensial",
+      "category": "Mühafizə",
+      "title": "Diferensial Mühafizə Nasazlığı",
+      "shortDescription": "Diferensial mühafizə sistemində yaranan nasazlıqlar",
+      "fullDescription": "Diferensial mühafizə nasazlıqları, avadanlıqların seçici mühafizəsini təmin edən sistemdə yaranan problemlərdir.",
+      "subheadings": [
+        "Cərəyan Transformatorları",
+        "Balans Problemləri",
+        "Həssaslıq Məsələləri",
+        "Seçicilik Problemləri",
+        "Siqnal İşləmə",
+        "Bloklanma Funksiyaları",
+        "Harmonik Təsirlər",
+        "Kalibrasiya və Sazlama"
+      ],
+      "causes": [
+        "Cərəyan transformatorlarının qeyri-simmetrikliyi",
+        "Balans dövrəsinin pozulması",
+        "Həssaslıq səviyyəsinin düzgün seçilməməsi",
+        "Seçicilik parametrlərinin pozulması",
+        "Siqnal işləmə blokunun nasazlığı",
+        "Bloklanma funksiyalarının xətası",
+        "Harmonik təhriflərin təsiri",
+        "Kalibrasiya pozğunluğu"
+      ],
+      "solutions": [
+        "Cərəyan transformatorlarının yoxlanması",
+        "Balans dövrəsinin tənzimlənməsi",
+        "Həssaslıq səviyyəsinin düzəlişi",
+        "Seçicilik parametrlərinin sazlanması",
+        "Siqnal işləmə blokunun təmiri",
+        "Bloklanma funksiyalarının yoxlanması",
+        "Harmonik filtrlərin quraşdırılması",
+        "Yenidən kalibrasiya"
+      ],
+      "icon": "🛡️"
+    },
+    {
+      "id": "muhafize-mesafe",
+      "category": "Mühafizə",
+      "title": "Məsafə Mühafizəsi Nasazlığı",
+      "shortDescription": "Məsafə mühafizəsi sistemində yaranan problemlər",
+      "fullDescription": "Məsafə mühafizəsi nasazlıqları, xəttin müxtəlif zonalarında qısa qapanmaları aşkar edən və ayıran sistemdə yaranan problemlərdir.",
+      "subheadings": [
+        "Zona Ayarları",
+        "Vaxt Tənzimləmələri",
+        "Gərginlik Ölçmələri",
+        "Cərəyan Ölçmələri",
+        "Xarakteristika Əyriləri",
+        "Rabitə Kanalları",
+        "Bloklama Sistemləri",
+        "Rezerv Mühafizə"
+      ],
+      "causes": [
+        "Zona parametrlərinin pozulması",
+        "Vaxt tənzimləmələrinin pozulması",
+        "Gərginlik ölçmə xətası",
+        "Cərəyan ölçmə xətası",
+        "Xarakteristika əyrilərinin dəyişməsi",
+        "Rabitə kanallarının nasazlığı",
+        "Bloklama sistemlərinin xətası",
+        "Rezerv mühafizənin işləməməsi"
+      ],
+      "solutions": [
+        "Zona parametrlərinin yoxlanması",
+        "Vaxt tənzimləmələrinin düzəlişi",
+        "Gərginlik ölçmələrinin kalibrasiyası",
+        "Cərəyan ölçmələrinin kalibrasiyası",
+        "Xarakteristika əyrilərinin tənzimlənməsi",
+        "Rabitə kanallarının bərpası",
+        "Bloklama sistemlərinin sazlanması",
+        "Rezerv mühafizənin yoxlanması"
+      ],
+      "icon": "🛡️"
+    },
+    {
+      "id": "muhafize-torpaqlama",
+      "category": "Mühafizə",
+      "title": "Torpaqlama Sistemi Nasazlığı",
+      "shortDescription": "Torpaqlama sistemində yaranan nasazlıqlar",
+      "fullDescription": "Torpaqlama sistemi nasazlıqları, elektrik təhlükəsizliyini təmin edən əsas mühafizə sistemində yaranan problemlərdir.",
+      "subheadings": [
+        "Torpaqlama Müqaviməti",
+        "Kontakt Birləşmələri",
+        "Korroziya Problemləri",
+        "Torpaq Konturları",
+        "Ekranlama Sistemləri",
+        "İldırımdan Mühafizə",
+        "Potensialların Bərabərləşdirilməsi",
+        "Ölçmə və Test"
+      ],
+      "causes": [
+        "Torpaqlama müqavimətinin artması",
+        "Kontakt birləşmələrinin zəifləməsi",
+        "Korroziya prosesləri",
+        "Torpaq konturlarının zədələnməsi",
+        "Ekranlama sisteminin pozulması",
+        "İldırım mühafizəsinin zədələnməsi",
+        "Potensial fərqlərinin yaranması",
+        "Test nöqtələrinin zədələnməsi"
+      ],
+      "solutions": [
+        "Torpaqlama müqavimətinin ölçülməsi",
+        "Kontakt birləşmələrinin bərkidilməsi",
+        "Korroziyadan mühafizə",
+        "Torpaq konturlarının bərpası",
+        "Ekranlama sisteminin yoxlanması",
+        "İldırım mühafizəsinin təmiri",
+        "Potensialların bərabərləşdirilməsi",
+        "Test nöqtələrinin bərpası"
+      ],
+      "icon": "⚡"
+    },
+    {
+      "id": "pano-avtomatik",
+      "category": "Elektrik Panosu",
+      "title": "Avtomatik və Qoruyucu Nasazlıqları",
+      "shortDescription": "Elektrik panosunda avtomatik və qoruyucu problemləri",
+      "fullDescription": "Avtomatik və qoruyucu nasazlıqları, sistemin mühafizə mexanizmini təsir edən əhəmiyyətli problemlərdir.",
+      "subheadings": [
+        "Mexaniki Problemlər",
+        "Kontakt Nasazlıqları",
+        "Qızma Problemləri",
+        "Sistem Qoruma Xətaları",
+        "Açma Xarakteristikası Problemləri",
+        "Nominal Cərəyan Tənzimləmələri",
+        "Qısa Qapanma Müdafiəsi",
+        "İndikatör və Siqnalizasiya Sistemləri"
+      ],
+      "causes": [
+        "Həddindən artıq yük səbəbindən açılma",
+        "Mexaniki nasazlıq",
+        "Kontakt problemi",
+        "Qızma problemi",
+        "Açma xarakteristikasının pozulması",
+        "Nominal cərəyan tənziminin pozulması",
+        "Qısa qapanma müdafiəsinin nasazlığı",
+        "İndikatör sistemlərinin xətası"
+      ],
+      "solutions": [
+        "Yük analizi",
+        "Avtomatik dəyişimi",
+        "Kontakt təmizliyi",
+        "Termoqrafik yoxlama",
+        "Açma xarakteristikasının tənzimlənməsi",
+        "Nominal cərəyan parametrlərinin düzəlişi",
+        "Qısa qapanma müdafiəsinin sazlanması",
+        "İndikatör sistemlərinin təmiri"
+      ],
+      "icon": "🔌"
+    },
+    {
+      "id": "pano-istilik",
+      "category": "Elektrik Panosu",
+      "title": "İstilik və Ventilyasiya Problemləri",
+      "shortDescription": "Elektrik panosunda istilik və ventilyasiya ilə bağlı nasazlıqlar",
+      "fullDescription": "İstilik və ventilyasiya problemləri, pano daxilindəki avadanlıqların normal işləməsinə mane olan və həyat müddətini azaldan nasazlıqlardır.",
+      "subheadings": [
+        "Hərarət Artımı",
+        "Ventilyator Nasazlıqları",
+        "Hava Dövriyyəsi",
+        "Rütubət Problemləri",
+        "Filtrasiya Sistemləri",
+        "Termostat İşi",
+        "İstilik İzolyasiyası",
+        "Kondensasiya"
+      ],
+      "causes": [
+        "Ventilyatorların nasazlığı",
+        "Hava filtrlərinin çirklənməsi",
+        "Həddindən artıq yüklənmə",
+        "Termostatın xətası",
+        "Hava dövriyyəsinin pozulması",
+        "İzolyasiya problemləri",
+        "Ətraf mühit təsirləri",
+        "Kondensasiya yaranması"
+      ],
+      "solutions": [
+        "Ventilyatorların təmiri/dəyişdirilməsi",
+        "Hava filtrlərinin təmizlənməsi",
+        "Yük paylanmasının optimallaşdırılması",
+        "Termostat kalibrasiyası",
+        "Hava dövriyyəsinin yaxşılaşdırılması",
+        "İzolyasiyanın yoxlanması",
+        "Ətraf mühit şərtlərinin yaxşılaşdırılması",
+        "Kondensasiya əleyhinə tədbirlər"
+      ],
+      "icon": "🌡️"
+    },
+    {
+      "id": "pano-sin",
+      "category": "Elektrik Panosu",
+      "title": "Şin Sistemi Nasazlıqları",
+      "shortDescription": "Elektrik panosu şin sistemində yaranan problemlər",
+      "fullDescription": "Şin sistemi nasazlıqları, elektrik enerjisinin paylanmasında və avadanlıqların qidalanmasında yaranan problemlərdir.",
+      "subheadings": [
+        "Şin Birləşmələri",
+        "İzolyasiya Vəziyyəti",
+        "Qızma Problemləri",
+        "Mexaniki Möhkəmlik",
+        "Korroziya",
+        "Yük Paylanması",
+        "Rəng Kodlaması",
+        "Torpaqlama Sistemi"
+      ],
+      "causes": [
+        "Şin birləşmələrinin boşalması",
+        "İzolyasiya zədələnməsi",
+        "Həddindən artıq yüklənmə",
+        "Mexaniki zərbələr",
+        "Korroziya prosesi",
+        "Qeyri-bərabər yük paylanması",
+        "Rəng kodlamasının pozulması",
+        "Torpaqlama problemləri"
+      ],
+      "solutions": [
+        "Birləşmələrin bərkidilməsi",
+        "İzolyasiyanın bərpası",
+        "Yük hesabatı",
+        "Mexaniki möhkəmliyin artırılması",
+        "Korroziyadan mühafizə",
+        "Yük paylanmasının optimallaşdırılması",
+        "Rəng kodlamasının yenilənməsi",
+        "Torpaqlama sisteminin yoxlanması"
+      ],
+      "icon": "⚡"
+    },
+    {
+      "id": "pano-olcu",
+      "category": "Elektrik Panosu",
+      "title": "Ölçü Cihazları Nasazlıqları",
+      "shortDescription": "Elektrik panosu ölçü cihazlarında yaranan nasazlıqlar",
+      "fullDescription": "Ölçü cihazları nasazlıqları, sistem parametrlərinin monitorinqi və nəzarətində yaranan problemlərdir.",
+      "subheadings": [
+        "Ampermetr Problemləri",
+        "Voltmetr Nasazlıqları",
+        "Sayğac Xətaları",
+        "Ölçü Transformatorları",
+        "Kalibrasiya Problemləri",
+        "Rəqəmsal Göstəricilər",
+        "Siqnalizasiya Sistemləri",
+        "Data Ötürmə"
+      ],
+      "causes": [
+        "Kalibrasiya pozğunluğu",
+        "Mexaniki zədələnmə",
+        "Ölçü transformatorunun nasazlığı",
+        "Elektron komponentlərin xətası",
+        "Göstəricilərin donması",
+        "Qidalanma problemi",
+        "Siqnal ötürmə xətası",
+        "Proqram təminatı problemi"
+      ],
+      "solutions": [
+        "Kalibrasiya yoxlanışı",
+        "Cihaz təmiri/dəyişdirilməsi",
+        "Ölçü transformatorunun yoxlanması",
+        "Elektron hissələrin təmiri",
+        "Sistem yenidən başladılması",
+        "Qidalanma mənbəyinin yoxlanması",
+        "Kommunikasiya xətlərinin testi",
+        "Proqram təminatının yenilənməsi"
+      ],
+      "icon": "📊"
+    },
+    {
+      "id": "etraf-firtina",
+      "category": "Ətraf Mühit",
+      "title": "Fırtına və İldırım Nasazlıqları",
+      "shortDescription": "Fırtına və ildırım səbəbli elektrik nasazlıqları",
+      "fullDescription": "Fırtına və ildırım səbəbli nasazlıqlar, sistem avadanlıqlarına ciddi zərər verə bilən təbii hadisələrdir.",
+      "subheadings": [
+        "İldırım Zərərləri",
+        "Külək Zərərləri",
+        "Xətt Qırılmaları",
+        "Torpaqlama Problemləri",
+        "İzolyator Zədələnmələri",
+        "Dayaq və Dirək Problemləri",
+        "Atmosfer Boşalması Təsirləri",
+        "Təbii Fəlakət Nəticəsində Yaranan Zədələr"
+      ],
+      "causes": [
+        "İldırım düşməsi",
+        "Güclü külək",
+        "Ağac aşması",
+        "Xətt qırılması",
+        "İzolyatorların zədələnməsi",
+        "Dayaqların deformasiyası",
+        "Atmosfer boşalması nəticəsində zədələnmə",
+        "Təbii fəlakətlərin təsiri"
+      ],
+      "solutions": [
+        "İldırımötürən yoxlanışı",
+        "Xətt təmiri",
+        "Ağac budama",
+        "Təcili müdaxilə",
+        "İzolyatorların dəyişdirilməsi",
+        "Dayaqların möhkəmləndirilməsi",
+        "Mühafizə sistemlərinin təkmilləşdirilməsi",
+        "Fövqəladə vəziyyət planının hazırlanması"
+      ],
+      "icon": "⚡"
+    },
+    {
+      "id": "etraf-temperatur",
+      "category": "Ətraf Mühit",
+      "title": "Yüksək Temperatur Nasazlıqları",
+      "shortDescription": "Yüksək temperatur səbəbindən yaranan elektrik nasazlıqları",
+      "fullDescription": "Yüksək temperatur nasazlıqları, avadanlıqların normal işləmə rejimini pozan və sistem etibarlılığını azaldan problemlərdir.",
+      "subheadings": [
+        "İstilik Stresi",
+        "Soyutma Sistemləri",
+        "Material Deformasiyası",
+        "İzolyasiya Problemləri",
+        "Həddindən Artıq Yüklənmə",
+        "Ventilyasiya Sistemləri",
+        "Temperatur Monitorinqi",
+        "İstilik Mübadiləsi"
+      ],
+      "causes": [
+        "Həddindən artıq istilik",
+        "Soyutma sisteminin çatışmazlığı",
+        "Material genişlənməsi",
+        "İzolyasiya materialının deqradasiyası",
+        "Sistem həddindən artıq yüklənməsi",
+        "Ventilyasiya çatışmazlığı",
+        "Temperatur sensorlarının xətası",
+        "İstilik mübadiləsinin pozulması"
+      ],
+      "solutions": [
+        "Soyutma sisteminin gücləndirilməsi",
+        "Ventilyasiyanın yaxşılaşdırılması",
+        "Material dəyişikliyi",
+        "İzolyasiyanın yenilənməsi",
+        "Yük paylanmasının optimallaşdırılması",
+        "Havalandırma sisteminin təkmilləşdirilməsi",
+        "Temperatur monitorinq sisteminin qurulması",
+        "İstilik mübadiləsi sisteminin təmiri"
+      ],
+      "icon": "🌡️"
+    },
+    {
+      "id": "etraf-sel",
+      "category": "Ətraf Mühit",
+      "title": "Sel və Su Basma Nasazlıqları",
+      "shortDescription": "Sel və su basması səbəbindən yaranan elektrik nasazlıqları",
+      "fullDescription": "Sel və su basması nasazlıqları, elektrik avadanlıqlarına ciddi zərər verən və sistem təhlükəsizliyini təhdid edən təbii fəlakətlərdir.",
+      "subheadings": [
+        "Su Zərərləri",
+        "Nəmlik Problemləri",
+        "Korroziya Təsirləri",
+        "İzolyasiya Pozulması",
+        "Qısa Qapanmalar",
+        "Torpaqlama Sistemləri",
+        "Avadanlıq Zədələnməsi",
+        "Təxliyə Sistemləri"
+      ],
+      "causes": [
+        "Su basması",
+        "Yüksək nəmlik",
+        "Korroziya prosesləri",
+        "İzolyasiyanın pozulması",
+        "Su ilə təmas nəticəsində qısa qapanma",
+        "Torpaqlama sisteminin zədələnməsi",
+        "Avadanlığın su ilə təması",
+        "Drenaj sisteminin çatışmazlığı"
+      ],
+      "solutions": [
+        "Su təxliyə sisteminin qurulması",
+        "Qurutma işlərinin aparılması",
+        "Korroziyadan mühafizə",
+        "İzolyasiyanın bərpası",
+        "Zədələnmiş avadanlığın dəyişdirilməsi",
+        "Torpaqlama sisteminin yenilənməsi",
+        "Mühafizə baryerlərinin qurulması",
+        "Drenaj sisteminin təkmilləşdirilməsi"
+      ],
+      "icon": "💧"
+    },
+    {
+      "id": "etraf-buz",
+      "category": "Ətraf Mühit",
+      "title": "Buz və Qar Nasazlıqları",
+      "shortDescription": "Buz və qar yığılması səbəbindən yaranan elektrik nasazlıqları",
+      "fullDescription": "Buz və qar nasazlıqları, xüsusilə qış mövsümündə elektrik avadanlıqlarının işinə mənfi təsir göstərən təbii hadisələrdir.",
+      "subheadings": [
+        "Buz Yükü",
+        "Mexaniki Gərginlik",
+        "İstilik Rejimi",
+        "Xətt Sallanması",
+        "İzolyator Problemləri",
+        "Dayaq Konstruksiyaları",
+        "Qar Təmizləmə",
+        "Əriməyə Nəzarət"
+      ],
+      "causes": [
+        "Buz yığılması",
+        "Qar ağırlığı",
+        "Aşağı temperatur",
+        "Xətlərin həddindən artıq yüklənməsi",
+        "İzolyatorların buzlaşması",
+        "Dayaqların həddindən artıq yüklənməsi",
+        "Qar yığınları",
+        "Buz əriməsi nəticəsində zədələnmə"
+      ],
+      "solutions": [
+        "Buz əridici sistemlərin quraşdırılması",
+        "Mexaniki möhkəmliyin artırılması",
+        "İstilik rejiminin tənzimlənməsi",
+        "Xətlərin gərginliyinin tənzimlənməsi",
+        "İzolyatorların təmizlənməsi",
+        "Dayaqların gücləndirilməsi",
+        "Qar təmizləmə işlərinin aparılması",
+        "Ərimə prosesinin monitorinqi"
+      ],
+      "icon": "❄️"
+    }
+  ]
+}
