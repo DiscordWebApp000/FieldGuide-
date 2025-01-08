@@ -20,7 +20,7 @@ export default function Navbar() {
                 alt="Azerishiq Logo"
                 width={40}
                 height={40}
-                className="h-10 w-auto object-contain"
+                style={{ width: 'auto', height: '40px' }}
                 priority
               />
             </Link>

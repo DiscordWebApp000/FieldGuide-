@@ -8,10 +8,12 @@ interface PageProps {
   params: {
     id: string;
   };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export default function Page({ params }: PageProps) {
-  const situation = situations.find((s) => s.id === params.id);
+export default async function Page({ params }: PageProps) {
+  const { id } = await params;
+  const situation = situations.find((s) => s.id === id);
 
   if (!situation) {
     notFound();
