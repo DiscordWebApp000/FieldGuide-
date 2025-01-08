@@ -3,11 +3,11 @@ import { CategoryHeader, SituationCard, SearchBox } from './components';
 
 const { situations } = situationsData;
 
-interface PageProps {
-  params: Promise<{
-    id: string;
-  }>;
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+type SearchParams = { [key: string]: string | string[] | undefined };
+
+interface Props {
+  params: Promise<{ id: string }>;
+  searchParams: Promise<SearchParams>;
 }
 
 function getCategoryId(category: string): string {
@@ -22,10 +22,10 @@ function getCategoryId(category: string): string {
   return categoryIds[category] || category.toLowerCase().replace(/\s+/g, '-');
 }
 
-export default async function CategoryPage({ params, searchParams }: PageProps) {
+export default async function CategoryPage({ params, searchParams }: Props) {
   const { id: categoryId } = await params;
-  const searchParamsData = await searchParams;
-  const searchQuery = typeof searchParamsData.q === 'string' ? searchParamsData.q : '';
+  const resolvedSearchParams = await searchParams;
+  const searchQuery = typeof resolvedSearchParams.q === 'string' ? resolvedSearchParams.q : '';
   
   const categorySituations = situations.filter(
     (situation) => getCategoryId(situation.category) === categoryId
